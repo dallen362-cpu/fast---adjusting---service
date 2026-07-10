@@ -1,0 +1,2699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FAST Adjusting Service Team Corp | Miami's Premier Luxury Public Adjusters · Miami-Dade High-Value Claims</title>
+<meta name="description" content="Miami's premier family-owned public adjusters. FAST Adjusting Service Team fights luxury and high-value insurance claims across Miami-Dade — Brickell, Coral Gables, Coconut Grove, Key Biscayne, Miami Beach, Aventura & beyond. Where the wealthy demand the finest coverage, we win it. AI-powered, fully automated. Call or text our smart number 855-2-ADJUST, 24/7. Mold, water, fire & smoke. No recovery, no fee." />
+<meta name="keywords" content="public adjuster near me, mold removal, mold remediation, water damage restoration, fire and smoke damage, storm damage claim, hurricane claim help, denied insurance claim, underpaid claim, emergency restoration within the hour, 24/7 water damage, nationwide restoration network, instant provider matching, OEM parts restoration, made in USA restoration materials, licensed public adjuster Florida, Cutler Bay public adjuster, Miami mold removal, 855-2-ADJUST, FAST Connect smart DID, referral royalty program, real-time claims platform" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="canonical" href="https://fastadjustingservice.com/" />
+<link rel="alternate" href="https://fastadjustingservice.telvergence.com/" />
+<!-- Standalone sellable brand domain: fastadjustingservice.com (primary).
+     Also live in the Telvergence showroom: fastadjustingservice.telvergence.com
+     Vanity options to secure: 8552adjust.com · 855adjust.com · fastadjusting.app -->
+
+<link rel="manifest" href="manifest.webmanifest" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="FAST Claims" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="FAST Adjusting Service Team Corp — Within the Hour. Nationwide. OEM &amp; Made in USA." />
+<meta property="og:description" content="Call or text 855-2-ADJUST. Mold, water, fire &amp; smoke restoration + licensed public adjusting. Always-on network finds your covered provider instantly. OEM, Made-in-USA parts only." />
+<meta property="og:url" content="https://fastadjustingservice.com/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#04070f" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":["LocalBusiness","GeneralContractor","InsuranceAgency"],
+  "name":"FAST Adjusting Service Team Corp",
+  "alternateName":"FAST Connect",
+  "telephone":"+1-855-223-5878",
+  "slogan":"Fast, precise, accurate claims & restoration. Free inspection. No recovery, no fee.",
+  "url":"https://fastadjustingservice.com/",
+  "email":"contact@fastadjustingservice.com",
+  "priceRange":"No recovery, no fee",
+  "areaServed":[{"@type":"City","name":"Miami"},{"@type":"AdministrativeArea","name":"Miami-Dade County"},{"@type":"City","name":"Coral Gables"},{"@type":"City","name":"Miami Beach"},{"@type":"City","name":"Coconut Grove"},{"@type":"City","name":"Key Biscayne"},{"@type":"City","name":"Aventura"},{"@type":"City","name":"Brickell"}],
+  "knowsAbout":["luxury property claims","high-value insurance claims","mold remediation","hurricane claims","public adjusting"],
+  "address":{"@type":"PostalAddress","streetAddress":"10387 SW 186 St, Ste 106","addressLocality":"Cutler Bay","addressRegion":"FL","postalCode":"33157","addressCountry":"US"},
+  "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"},
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mold Removal & Remediation"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Water & Flood Damage Restoration"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Fire & Smoke Damage Restoration"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Hurricane & Storm Damage Public Adjusting"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Denied & Underpaid Claim Recovery"}}
+  ]
+}
+</script>
+
+<!-- ============================================================
+     THREE.JS (3D engine) — loaded from CDN. Works when this file
+     is opened in a browser or deployed to any web host.
+     ============================================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<style>
+/* ============================================================
+   BRAND TOKENS
+   ============================================================ */
+:root{
+  --navy-950:#04070f;
+  --navy-900:#070c1a;
+  --navy-800:#0c1428;
+  --navy-700:#111c38;
+  --gold:#ffc93c;
+  --gold-2:#ff9a2e;
+  --gold-glow:rgba(255,201,60,.55);
+  --cyan:#38e1ff;
+  --cyan-2:#4f8cff;
+  --miami:#ff3d9a;
+  --miami-2:#ff8fc7;
+  --palm:#00e6a8;
+  --ink:#eef3ff;
+  --muted:#9fb0cf;
+  --muted-2:#67789c;
+  --line:rgba(255,255,255,.08);
+  --card:rgba(255,255,255,.035);
+  --card-2:rgba(255,255,255,.06);
+  --radius:20px;
+  --shadow:0 30px 80px -30px rgba(0,0,0,.85);
+  --maxw:1200px;
+  --font:'Inter','Segoe UI',system-ui,-apple-system,sans-serif;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font);
+  background:var(--navy-950);
+  color:var(--ink);
+  overflow-x:hidden;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* 3D canvas sits behind everything */
+#bg3d{position:fixed;inset:0;z-index:0;pointer-events:none}
+.veil{position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:
+    radial-gradient(1200px 600px at 78% -10%, rgba(255,201,60,.10), transparent 60%),
+    radial-gradient(1100px 650px at 88% 8%, rgba(255,61,154,.14), transparent 58%),
+    radial-gradient(1000px 700px at 10% 20%, rgba(56,225,255,.13), transparent 55%),
+    linear-gradient(180deg, rgba(4,7,15,.35), rgba(4,7,15,.86) 60%, var(--navy-950));
+}
+.wrap{position:relative;z-index:2}
+
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+header.nav{
+  position:sticky;top:0;z-index:40;
+  backdrop-filter:blur(14px);
+  background:linear-gradient(180deg,rgba(4,7,15,.85),rgba(4,7,15,.35));
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}
+.brand .mark{
+  width:42px;height:42px;border-radius:12px;flex:0 0 auto;
+  background:conic-gradient(from 210deg,var(--gold),var(--gold-2),var(--cyan),var(--gold));
+  display:grid;place-items:center;color:#0a0f1e;font-weight:900;font-size:18px;
+  box-shadow:0 0 26px var(--gold-glow);
+}
+.brand small{display:block;font-weight:600;font-size:11px;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{font-size:14px;color:var(--muted);font-weight:600;transition:.2s}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{
+  background:linear-gradient(135deg,var(--gold),var(--gold-2));
+  color:#0a0f1e;font-weight:800;padding:11px 20px;border-radius:999px;font-size:14px;
+  box-shadow:0 8px 30px -6px var(--gold-glow);transition:.2s;
+}
+.nav-cta:hover{transform:translateY(-2px)}
+@media(max-width:900px){.nav-links{display:none}}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{padding:70px 0 40px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+@media(max-width:960px){.hero-grid{grid-template-columns:1fr;gap:20px}}
+
+.badge{
+  display:inline-flex;align-items:center;gap:9px;
+  background:var(--card-2);border:1px solid var(--line);
+  padding:8px 15px;border-radius:999px;font-size:12.5px;color:var(--gold);
+  font-weight:700;letter-spacing:.4px;margin-bottom:22px;
+}
+.badge .dot{width:8px;height:8px;border-radius:50%;background:#20e070;box-shadow:0 0 10px #20e070;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+.hero h1{
+  font-size:clamp(34px,5.4vw,62px);line-height:1.04;font-weight:900;letter-spacing:-1.2px;
+  margin-bottom:20px;
+}
+.hero h1 .hl{
+  background:linear-gradient(120deg,var(--gold),var(--gold-2) 60%,var(--cyan));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p.lede{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:560px;margin-bottom:30px}
+
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:15px;
+  padding:16px 26px;border-radius:14px;cursor:pointer;border:none;transition:.22s;
+}
+.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#0a0f1e;
+  box-shadow:0 14px 40px -10px var(--gold-glow)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 22px 50px -12px var(--gold-glow)}
+.btn-ghost{background:var(--card-2);color:var(--ink);border:1px solid var(--line)}
+.btn-ghost:hover{background:rgba(255,255,255,.1);transform:translateY(-3px)}
+
+.trust-row{display:flex;gap:26px;flex-wrap:wrap;color:var(--muted);font-size:13.5px;font-weight:600}
+.trust-row span{display:flex;align-items:center;gap:8px}
+.trust-row b{color:var(--ink)}
+
+/* AI CONCIERGE CARD (talking assistant) */
+.concierge{
+  position:relative;border:1px solid var(--line);border-radius:26px;overflow:hidden;
+  background:linear-gradient(180deg,rgba(12,20,40,.7),rgba(7,12,26,.85));
+  box-shadow:var(--shadow);
+}
+#orbCanvas{width:100%;height:300px;display:block}
+.concierge-body{padding:22px 24px 26px;position:relative}
+.speech{
+  min-height:64px;background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:14px 16px;font-size:15px;color:var(--ink);margin-bottom:16px;position:relative;
+}
+.speech::before{content:'AVA · AI CLAIMS CONCIERGE';position:absolute;top:-9px;left:14px;
+  font-size:9.5px;letter-spacing:2px;color:var(--gold);background:var(--navy-900);
+  padding:2px 8px;border-radius:6px;font-weight:800}
+.concierge-actions{display:flex;gap:10px;flex-wrap:wrap}
+.mini{flex:1;min-width:130px;background:var(--card-2);border:1px solid var(--line);
+  border-radius:12px;padding:12px;text-align:center;font-weight:700;font-size:13.5px;cursor:pointer;transition:.2s}
+.mini:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.mute-btn{position:absolute;top:16px;right:16px;z-index:5;width:40px;height:40px;border-radius:50%;
+  background:rgba(0,0,0,.4);border:1px solid var(--line);color:var(--ink);cursor:pointer;font-size:16px}
+
+/* ============================================================
+   MARQUEE / STAT STRIP
+   ============================================================ */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;text-align:center}
+.stat .num{font-size:clamp(26px,4vw,40px);font-weight:900;
+  background:linear-gradient(120deg,var(--gold),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .lbl{font-size:12.5px;color:var(--muted);font-weight:600;margin-top:4px}
+
+/* ============================================================
+   SECTION SHELL
+   ============================================================ */
+section{padding:84px 0;position:relative}
+.eyebrow{color:var(--gold);font-weight:800;letter-spacing:3px;font-size:12px;text-transform:uppercase;margin-bottom:14px}
+.h2{font-size:clamp(28px,4vw,44px);font-weight:900;letter-spacing:-.8px;line-height:1.08;margin-bottom:16px}
+.sub{color:var(--muted);font-size:17px;max-width:640px}
+.center{text-align:center;margin:0 auto}
+
+/* PLATFORM */
+.platform-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:46px;align-items:center;margin-top:48px}
+@media(max-width:900px){.platform-grid{grid-template-columns:1fr;gap:36px}}
+.phone-mock{position:relative;width:300px;max-width:100%;margin:0 auto;border-radius:42px;padding:14px;
+  background:linear-gradient(160deg,#1a2340,#0a1020);border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 40px 90px -30px rgba(0,0,0,.9),0 0 60px -20px var(--gold-glow)}
+.phone-mock .notch{position:absolute;top:22px;left:50%;transform:translateX(-50%);width:120px;height:26px;
+  background:#05080f;border-radius:0 0 16px 16px;z-index:3}
+.pm-screen{background:linear-gradient(180deg,#0a1224,#0c1530);border-radius:32px;padding:38px 16px 18px;min-height:520px}
+.pm-head{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.pm-logo{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-weight:900;color:#0a0f1e;
+  background:conic-gradient(from 210deg,var(--gold),var(--gold-2),var(--cyan),var(--gold))}
+.pm-brand{font-weight:800;font-size:14px}.pm-sub{font-size:10px;color:var(--muted)}
+.pm-live{margin-left:auto;font-size:9px;font-weight:800;color:#20e070;letter-spacing:.5px}
+.pm-card{background:linear-gradient(135deg,rgba(255,201,60,.16),rgba(56,225,255,.1));border:1px solid rgba(255,201,60,.35);
+  border-radius:16px;padding:16px;text-align:center;margin-bottom:14px}
+.pm-lbl{font-size:9.5px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);font-weight:700}
+.pm-number{font-size:26px;font-weight:900;margin:5px 0;background:linear-gradient(120deg,var(--gold),var(--cyan));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.pm-verified{font-size:9.5px;color:#20e070;font-weight:800;margin-bottom:5px}
+
+/* SMART DID LIVE DEMO */
+.did-demo{margin-top:44px;border:1px solid var(--line);border-radius:22px;overflow:hidden;
+  background:linear-gradient(180deg,rgba(12,20,40,.7),rgba(7,12,26,.85));box-shadow:var(--shadow)}
+.did-demo-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  padding:22px 26px;border-bottom:1px solid var(--line)}
+.did-eyebrow{color:var(--gold);font-weight:800;letter-spacing:1.5px;font-size:11px;text-transform:uppercase;margin-bottom:6px}
+.did-demo-head h3{font-size:19px;font-weight:900}
+.did-console{padding:22px 26px;font-family:'SF Mono',ui-monospace,'Cascadia Code',Consolas,monospace;
+  font-size:13px;line-height:1.9;min-height:210px;background:
+  repeating-linear-gradient(180deg,transparent,transparent 30px,rgba(255,255,255,.015) 30px,rgba(255,255,255,.015) 31px)}
+.did-line{white-space:pre-wrap;animation:fade .3s ease}
+.did-line.muted{color:var(--muted-2)}
+.did-line .ok{color:#20e070;font-weight:700}
+.did-line .k{color:var(--cyan)}
+.did-line .num{color:var(--gold);font-weight:800;font-size:16px}
+.did-cursor{display:inline-block;width:8px;height:15px;background:var(--gold);margin-left:2px;
+  animation:blink 1s steps(1) infinite;vertical-align:middle}
+@keyframes blink{50%{opacity:0}}
+.did-issued{margin-top:12px;display:inline-flex;align-items:center;gap:12px;background:rgba(255,201,60,.1);
+  border:1px solid rgba(255,201,60,.4);border-radius:14px;padding:14px 20px}
+.did-issued .big{font-size:24px;font-weight:900;background:linear-gradient(120deg,var(--gold),var(--cyan));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.did-issued .tag{font-size:11px;color:#20e070;font-weight:800}
+
+/* NATIONWIDE COVERAGE */
+.cov-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px;align-items:center;margin-top:48px}
+@media(max-width:900px){.cov-grid{grid-template-columns:1fr;gap:40px}}
+.radar{position:relative;width:340px;max-width:88vw;aspect-ratio:1;margin:0 auto;border-radius:50%;
+  background:radial-gradient(circle at 50% 50%,rgba(56,225,255,.10),rgba(7,12,26,.5) 70%);
+  border:1px solid var(--line);overflow:hidden}
+.radar-rings span{position:absolute;inset:0;margin:auto;border:1px solid rgba(56,225,255,.18);border-radius:50%}
+.radar-rings span:nth-child(1){width:33%;height:33%}
+.radar-rings span:nth-child(2){width:66%;height:66%}
+.radar-rings span:nth-child(3){width:99%;height:99%}
+.radar-sweep{position:absolute;inset:0;border-radius:50%;
+  background:conic-gradient(from 0deg,rgba(255,201,60,.45),rgba(255,201,60,0) 55%);
+  animation:sweep 4s linear infinite;mix-blend-mode:screen}
+@keyframes sweep{to{transform:rotate(360deg)}}
+.radar-core{position:absolute;inset:0;margin:auto;width:74px;height:74px;border-radius:50%;display:grid;place-items:center;
+  font-weight:900;font-size:15px;color:#0a0f1e;background:conic-gradient(from 210deg,var(--gold),var(--gold-2),var(--cyan),var(--gold));
+  box-shadow:0 0 30px var(--gold-glow)}
+.radar .pin{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--gold);
+  box-shadow:0 0 0 0 rgba(255,201,60,.6);animation:ping 2.4s ease-out infinite}
+.radar .pin:nth-child(6){animation-delay:.4s}.radar .pin:nth-child(7){animation-delay:.8s}
+.radar .pin:nth-child(8){animation-delay:1.2s}.radar .pin:nth-child(9){animation-delay:1.6s}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(255,201,60,.6)}70%{box-shadow:0 0 0 16px rgba(255,201,60,0)}100%{box-shadow:0 0 0 0 rgba(255,201,60,0)}}
+.radar-cap{position:absolute;left:0;right:0;bottom:14px;text-align:center;font-size:11px;font-weight:800;
+  letter-spacing:.5px;color:var(--cyan)}
+.cov-feats{display:flex;flex-direction:column;gap:16px}
+.cov-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.cov-chips span{background:var(--card-2);border:1px solid var(--line);border-radius:999px;padding:9px 15px;
+  font-size:13px;font-weight:700;color:var(--ink)}
+.pm-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.pm-stat{background:var(--card-2);border:1px solid var(--line);border-radius:12px;padding:10px 4px;text-align:center}
+.pm-stat b{display:block;font-size:16px;font-weight:900;color:var(--gold)}
+.pm-stat span{font-size:9px;color:var(--muted)}
+.pm-row{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:10px;
+  padding:10px 12px;font-size:11.5px;margin-bottom:8px;color:var(--ink)}
+.pm-row b{color:#20e070;margin-left:auto}
+.pm-dot{width:8px;height:8px;border-radius:50%;flex:0 0 auto}
+.pm-dot.g{background:#20e070}.pm-dot.y{background:var(--gold)}.pm-dot.b{background:var(--cyan)}
+.pm-cta{margin-top:12px;text-align:center;background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#0a0f1e;
+  font-weight:800;font-size:13px;padding:12px;border-radius:12px}
+.platform-feats{display:flex;flex-direction:column;gap:16px}
+.pf{display:flex;gap:15px;align-items:flex-start}
+.pf-ic{flex:0 0 auto;width:48px;height:48px;border-radius:12px;display:grid;place-items:center;font-size:22px;
+  background:linear-gradient(135deg,rgba(255,201,60,.18),rgba(56,225,255,.12));border:1px solid var(--line)}
+.pf h4{font-size:17px;font-weight:800;margin-bottom:4px}
+.pf p{color:var(--muted);font-size:14px}
+
+/* REFERRAL CTA */
+.refer-cta{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:center;margin-top:44px;
+  border:1px solid var(--line);border-radius:26px;padding:38px;
+  background:linear-gradient(135deg,rgba(255,201,60,.12),rgba(79,140,255,.1));box-shadow:var(--shadow)}
+@media(max-width:820px){.refer-cta{grid-template-columns:1fr;gap:24px;padding:26px}}
+.refer-cta h3{font-size:26px;font-weight:900;margin-bottom:8px}
+.refer-cta>div>p{color:var(--muted);font-size:15px}
+.refer-form{background:var(--navy-900);border:1px solid var(--line);border-radius:18px;padding:22px}
+.refer-note{font-size:12px;color:var(--muted);text-align:center;margin-top:10px}
+
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+@media(max-width:900px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.svc-grid{grid-template-columns:1fr}}
+.svc{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;
+  transition:.28s;position:relative;overflow:hidden;
+}
+.svc:hover{transform:translateY(-6px);border-color:rgba(255,201,60,.4);background:var(--card-2)}
+.svc .ic{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;font-size:26px;
+  background:linear-gradient(135deg,rgba(255,201,60,.18),rgba(56,225,255,.12));border:1px solid var(--line);margin-bottom:18px}
+.svc h3{font-size:19px;font-weight:800;margin-bottom:8px}
+.svc p{color:var(--muted);font-size:14.5px}
+
+/* WHY US / DIFFERENTIATORS */
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:44px}
+@media(max-width:800px){.why-grid{grid-template-columns:1fr}}
+.why{display:flex;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.why .num{flex:0 0 auto;width:46px;height:46px;border-radius:12px;display:grid;place-items:center;
+  font-weight:900;color:#0a0f1e;background:linear-gradient(135deg,var(--gold),var(--gold-2))}
+.why h4{font-size:17px;font-weight:800;margin-bottom:5px}
+.why p{color:var(--muted);font-size:14px}
+
+/* COMPARISON TABLE */
+.compare{margin-top:44px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+.compare-row{display:grid;grid-template-columns:1.4fr 1fr 1fr;border-bottom:1px solid var(--line)}
+.compare-row:last-child{border-bottom:none}
+.compare-row>div{padding:16px 18px;font-size:14.5px;display:flex;align-items:center;gap:8px}
+.compare-row.head>div{font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.5px;background:rgba(255,255,255,.03)}
+.compare-row .us{color:var(--gold);font-weight:700;background:rgba(255,201,60,.05)}
+.compare-row .them{color:var(--muted-2)}
+.yes{color:#20e070}.no{color:#ff5b6a}
+@media(max-width:640px){.compare-row{grid-template-columns:1.2fr .8fr .8fr}.compare-row>div{padding:12px;font-size:12.5px}}
+
+/* PROCESS */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
+@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.steps{grid-template-columns:1fr}}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;position:relative}
+.step .n{font-size:52px;font-weight:900;line-height:1;color:transparent;-webkit-text-stroke:1.5px rgba(255,201,60,.5)}
+.step h4{font-size:17px;font-weight:800;margin:10px 0 6px}
+.step p{color:var(--muted);font-size:13.5px}
+
+/* ============================================================
+   INTAKE FUNNEL
+   ============================================================ */
+.funnel-shell{
+  border:1px solid var(--line);border-radius:26px;overflow:hidden;
+  background:linear-gradient(180deg,rgba(12,20,40,.75),rgba(7,12,26,.9));
+  box-shadow:var(--shadow);max-width:760px;margin:44px auto 0;
+}
+.funnel-head{padding:26px 30px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.funnel-head h3{font-size:20px;font-weight:900}
+.progress{flex:1;min-width:180px;max-width:320px}
+.progress .bar{height:8px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden}
+.progress .bar i{display:block;height:100%;width:20%;border-radius:999px;
+  background:linear-gradient(90deg,var(--gold),var(--gold-2));transition:width .4s cubic-bezier(.2,.8,.2,1)}
+.progress .lbl{font-size:11.5px;color:var(--muted);margin-top:7px;font-weight:600;text-align:right}
+
+.funnel-body{padding:30px}
+.qstep{display:none;animation:fade .4s ease}
+.qstep.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.qstep .q{font-size:22px;font-weight:800;margin-bottom:6px}
+.qstep .qs{color:var(--muted);font-size:14.5px;margin-bottom:22px}
+
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:520px){.opts{grid-template-columns:1fr}}
+.opt{
+  border:1px solid var(--line);background:var(--card);border-radius:14px;padding:18px;cursor:pointer;
+  display:flex;align-items:center;gap:13px;font-weight:700;font-size:15px;transition:.18s;
+}
+.opt:hover{border-color:var(--gold);transform:translateY(-2px)}
+.opt.sel{border-color:var(--gold);background:rgba(255,201,60,.1);box-shadow:0 0 0 1px var(--gold) inset}
+.opt .e{font-size:22px}
+
+.field{margin-bottom:16px}
+.field label{display:block;font-size:13px;font-weight:700;color:var(--muted);margin-bottom:7px}
+.field input,.field textarea,.field select{
+  width:100%;background:var(--navy-900);border:1px solid var(--line);border-radius:12px;
+  padding:14px 15px;color:var(--ink);font-size:15px;font-family:inherit;transition:.18s}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(255,201,60,.15)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:520px){.two{grid-template-columns:1fr}}
+
+.funnel-foot{display:flex;justify-content:space-between;gap:12px;margin-top:26px}
+.lnk-back{background:transparent;border:none;color:var(--muted);font-weight:700;cursor:pointer;font-size:14px}
+.lnk-back:hover{color:var(--ink)}
+
+.success{text-align:center;padding:20px 0}
+.success .check{width:84px;height:84px;border-radius:50%;margin:0 auto 20px;display:grid;place-items:center;
+  font-size:42px;background:radial-gradient(circle,rgba(32,224,112,.25),transparent);border:2px solid #20e070;color:#20e070;
+  animation:pop .5s ease}
+@keyframes pop{0%{transform:scale(.4);opacity:0}100%{transform:scale(1);opacity:1}}
+.success h3{font-size:26px;font-weight:900;margin-bottom:10px}
+.success p{color:var(--muted);max-width:440px;margin:0 auto 24px}
+
+/* ============================================================
+   SCHEDULER (Google Calendar)
+   ============================================================ */
+.sched-card{border:1px solid var(--line);border-radius:26px;overflow:hidden;background:var(--card);max-width:900px;margin:44px auto 0;box-shadow:var(--shadow)}
+.sched-head{padding:26px 30px;border-bottom:1px solid var(--line);text-align:center}
+.sched-head h3{font-size:22px;font-weight:900;margin-bottom:6px}
+.sched-head p{color:var(--muted);font-size:14.5px}
+#gcal-frame{width:100%;height:640px;border:none;background:#fff}
+.sched-fallback{padding:40px 30px;text-align:center;color:var(--muted)}
+.sched-fallback a{color:var(--gold);font-weight:800}
+
+/* ============================================================
+   PHONE NUMBERS GRID (10 lines)
+   ============================================================ */
+.phones{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:44px}
+@media(max-width:760px){.phones{grid-template-columns:1fr}}
+.phone{
+  display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);
+  border-radius:16px;padding:18px 20px;transition:.2s;
+}
+.phone:hover{border-color:var(--gold);transform:translateY(-2px);background:var(--card-2)}
+.phone .pic{width:48px;height:48px;flex:0 0 auto;border-radius:12px;display:grid;place-items:center;font-size:22px;
+  background:linear-gradient(135deg,rgba(255,201,60,.16),rgba(56,225,255,.12));border:1px solid var(--line)}
+.phone .meta{flex:1;min-width:0}
+.phone .dept{font-size:12px;color:var(--gold);font-weight:800;letter-spacing:.4px;text-transform:uppercase}
+.phone .num{font-size:19px;font-weight:900;letter-spacing:.3px}
+.phone .desc{font-size:12.5px;color:var(--muted)}
+.phone-actions{display:flex;flex-direction:column;gap:8px;flex:0 0 auto}
+.phone .call{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#0a0f1e;font-weight:800;
+  padding:10px 16px;border-radius:999px;font-size:13px;white-space:nowrap;text-align:center}
+.phone .text{background:var(--card-2);border:1px solid var(--line);color:var(--cyan);font-weight:800;
+  padding:9px 16px;border-radius:999px;font-size:13px;white-space:nowrap;text-align:center}
+.phone .text:hover{border-color:var(--cyan)}
+.sms-tag{background:rgba(56,225,255,.16);color:var(--cyan);font-size:9px;font-weight:800;letter-spacing:.5px;
+  padding:2px 7px;border-radius:6px;vertical-align:middle;margin-left:6px}
+
+/* HERO PHONE CHIP */
+.hero-phone{display:inline-flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:26px;
+  background:linear-gradient(135deg,rgba(255,201,60,.14),rgba(56,225,255,.1));
+  border:1px solid rgba(255,201,60,.35);border-radius:14px;padding:12px 18px}
+.hero-phone .hp-lbl{font-weight:700;font-size:14px;color:var(--ink)}
+.hero-phone a{font-size:22px;font-weight:900;letter-spacing:.3px;
+  background:linear-gradient(120deg,var(--gold),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-phone .hp-num{font-size:12.5px;color:var(--muted);font-weight:600;width:100%}
+
+/* FAQ */
+.faq{max-width:820px;margin:44px auto 0}
+.qa{border:1px solid var(--line);border-radius:14px;margin-bottom:12px;background:var(--card);overflow:hidden}
+.qa summary{padding:20px 22px;font-weight:800;font-size:16px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:'+';color:var(--gold);font-size:24px;font-weight:400;transition:.2s}
+.qa[open] summary::after{transform:rotate(45deg)}
+.qa p{padding:0 22px 20px;color:var(--muted);font-size:14.5px}
+
+/* FINAL CTA */
+.final{
+  border:1px solid var(--line);border-radius:30px;padding:60px 40px;text-align:center;position:relative;overflow:hidden;
+  background:linear-gradient(135deg,rgba(255,201,60,.14),rgba(79,140,255,.12));
+  box-shadow:var(--shadow);
+}
+.final h2{font-size:clamp(28px,4.4vw,46px);font-weight:900;letter-spacing:-1px;margin-bottom:14px}
+.final p{color:var(--muted);font-size:17px;max-width:540px;margin:0 auto 28px}
+
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:52px 0 34px;margin-top:80px;background:rgba(4,7,15,.6)}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px;margin-bottom:36px}
+@media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.foot-grid{grid-template-columns:1fr}}
+.foot-grid h5{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:16px;font-weight:800}
+.foot-grid a,.foot-grid p{color:var(--muted);font-size:14px;margin-bottom:10px;display:block}
+.foot-grid a:hover{color:var(--gold)}
+.legal{border-top:1px solid var(--line);padding-top:24px;color:var(--muted-2);font-size:12.5px;text-align:center;line-height:1.7}
+
+/* STICKY MOBILE CALL BAR */
+.callbar{position:fixed;bottom:0;left:0;right:0;z-index:50;display:none;gap:10px;padding:12px;
+  background:rgba(4,7,15,.95);border-top:1px solid var(--line);backdrop-filter:blur(10px)}
+.callbar a{flex:1;text-align:center;padding:14px;border-radius:12px;font-weight:800;font-size:15px}
+.callbar .c1{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#0a0f1e}
+.callbar .c2{background:var(--card-2);border:1px solid var(--line);color:var(--ink)}
+@media(max-width:760px){.callbar{display:flex}body{padding-bottom:76px}}
+
+/* INSTANT CLAIM PROFILE + PHOTO UPLOAD */
+.pf-wrap{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:44px;align-items:start}
+@media(max-width:860px){.pf-wrap{grid-template-columns:1fr}}
+.pf-left,.pf-right{background:linear-gradient(180deg,rgba(12,20,40,.7),rgba(7,12,26,.85));border:1px solid var(--line);border-radius:22px;padding:24px}
+.uploader{border:2px dashed rgba(255,255,255,.18);border-radius:16px;padding:30px 20px;text-align:center;cursor:pointer;transition:.2s;background:var(--card)}
+.uploader:hover,.uploader:focus,.uploader.drag{border-color:var(--gold);background:rgba(255,201,60,.06);outline:none}
+.up-ic{font-size:38px;margin-bottom:8px}
+.up-title{font-weight:800;font-size:15px}
+.up-sub{font-size:12.5px;color:var(--muted);margin-top:4px}
+.thumbs{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 6px}
+.thumbs:empty{display:none}
+.thumb{position:relative;width:72px;height:72px;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.thumb button{position:absolute;top:3px;right:3px;width:20px;height:20px;border-radius:50%;border:none;background:rgba(0,0,0,.65);color:#fff;font-size:11px;cursor:pointer;line-height:1}
+.pf-left .field{margin-top:14px}
+.assess-empty{color:var(--muted);text-align:center;padding:40px 16px;line-height:1.7}
+.assess{animation:fade .4s ease}
+.assess-head{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.assess-badge{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#0a0f1e;font-weight:900;font-size:12px;padding:6px 12px;border-radius:999px}
+.assess-id{font-family:ui-monospace,monospace;font-weight:900;font-size:18px}
+.assess-conf{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.conf-bar{flex:1;height:8px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden}
+.conf-bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--gold),var(--cyan));width:0;transition:width 1s ease}
+.conf-pct{font-weight:900;color:var(--gold);font-size:13px}
+.assess-row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted)}
+.assess-row b{color:var(--ink);text-align:right}
+.assess-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.assess-actions .btn{flex:1;min-width:150px;padding:13px}
+.assess-note{font-size:11.5px;color:var(--muted-2);margin-top:12px;line-height:1.6}
+.sat-badge{max-width:640px;margin:22px auto 0;text-align:center;background:linear-gradient(135deg,rgba(32,224,112,.12),rgba(56,225,255,.08));
+  border:1px solid rgba(32,224,112,.35);border-radius:14px;padding:14px 18px;font-size:14px;color:var(--ink)}
+
+/* REAL-TIME CLAIM TRACKER */
+.track-app{max-width:760px;margin:44px auto 0;border:1px solid var(--line);border-radius:24px;overflow:hidden;
+  background:linear-gradient(180deg,rgba(12,20,40,.78),rgba(7,12,26,.92));box-shadow:var(--shadow)}
+.track-head{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:20px 22px;border-bottom:1px solid var(--line)}
+.track-idbar{display:flex;gap:10px;flex:1;min-width:240px}
+.track-idbar input{flex:1;background:var(--navy-900);border:1px solid var(--line);border-radius:12px;padding:13px 15px;color:var(--ink);font-size:15px;font-family:inherit}
+.track-idbar input:focus{outline:none;border-color:var(--gold)}
+.track-empty{padding:40px 24px;text-align:center;color:var(--muted)}
+.track-body{padding:24px}
+.track-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:18px}
+.tt-lbl{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.tt-id{font-size:20px;font-weight:900;font-family:ui-monospace,monospace}
+.tt-status{background:rgba(56,225,255,.14);border:1px solid rgba(56,225,255,.4);color:var(--cyan);font-weight:800;font-size:12.5px;padding:7px 14px;border-radius:999px}
+.track-meter{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.tm-bar{flex:1;height:12px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden}
+.tm-bar i{display:block;height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,var(--gold),var(--gold-2),var(--cyan));transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+.tm-pct{font-weight:900;font-size:15px;color:var(--gold);min-width:44px;text-align:right}
+.track-steps{display:flex;flex-direction:column;gap:2px;margin-bottom:20px}
+.tstep{display:flex;align-items:center;gap:14px;padding:12px 4px;position:relative}
+.tstep .tdot{width:26px;height:26px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;font-size:13px;font-weight:900;
+  background:var(--card-2);border:1px solid var(--line);color:var(--muted)}
+.tstep.done .tdot{background:#20e070;border-color:#20e070;color:#04140a}
+.tstep.current .tdot{background:linear-gradient(135deg,var(--gold),var(--gold-2));border-color:var(--gold);color:#0a0f1e;box-shadow:0 0 0 5px rgba(255,201,60,.18);animation:pulse 1.6s infinite}
+.tstep .tname{font-weight:700;font-size:14.5px}
+.tstep.pending .tname{color:var(--muted-2)}
+.tstep .teta{margin-left:auto;font-size:12px;color:var(--muted)}
+.tstep::before{content:'';position:absolute;left:16px;top:38px;bottom:-2px;width:2px;background:var(--line)}
+.tstep:last-child::before{display:none}
+.tstep.done::before{background:#20e070}
+.track-payout{background:linear-gradient(135deg,rgba(32,224,112,.16),rgba(255,201,60,.12));border:1px solid rgba(32,224,112,.4);border-radius:16px;padding:18px 20px;text-align:center;margin-bottom:20px}
+.track-payout b{display:block;font-size:26px;font-weight:900;color:#20e070}
+.track-feed-h{font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.track-feed{display:flex;flex-direction:column;gap:8px}
+.tfeed{display:flex;gap:10px;font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;animation:fade .4s ease}
+.tfeed .tf-time{color:var(--muted-2);font-family:ui-monospace,monospace;flex:0 0 auto}
+
+/* FRANCHISE */
+.fr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px;align-items:start}
+@media(max-width:900px){.fr-grid{grid-template-columns:1fr}}
+.fr-card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px;position:relative}
+.fr-card.featured{border-color:rgba(255,201,60,.5);background:linear-gradient(180deg,rgba(255,201,60,.08),var(--card));box-shadow:0 0 50px -20px var(--gold-glow)}
+.fr-tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--muted);
+  background:var(--card-2);border:1px solid var(--line);padding:5px 12px;border-radius:999px;margin-bottom:14px}
+.fr-tag.gold{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#0a0f1e;border:none}
+.fr-card h3{font-size:20px;font-weight:900;margin-bottom:10px}
+.fr-price{font-size:34px;font-weight:900;background:linear-gradient(120deg,var(--gold),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:16px}
+.fr-price span{display:block;font-size:12.5px;font-weight:600;color:var(--muted);-webkit-text-fill-color:var(--muted)}
+.fr-list{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:20px}
+.fr-list li{font-size:14px;color:var(--muted)}
+.fr-btn{width:100%}
+.fr-form-wrap{max-width:640px;margin:36px auto 0;background:var(--navy-900);border:1px solid var(--line);border-radius:20px;padding:28px}
+.fr-form-wrap h3{font-size:20px;font-weight:900;margin-bottom:18px;text-align:center}
+
+/* INDEPENDENT ADJUSTERS */
+.adj-card{max-width:900px;margin:0 auto;text-align:center;border:1px solid var(--line);border-radius:28px;padding:48px 36px;
+  background:linear-gradient(135deg,rgba(56,225,255,.1),rgba(255,201,60,.08));box-shadow:var(--shadow)}
+.adj-badge{display:inline-block;font-weight:900;letter-spacing:.5px;font-size:13px;padding:8px 18px;border-radius:999px;margin-bottom:16px;
+  background:linear-gradient(135deg,var(--cyan),var(--cyan-2));color:#04121a}
+.adj-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0}
+@media(max-width:760px){.adj-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:440px){.adj-grid{grid-template-columns:1fr}}
+.adj-item{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 14px}
+.adj-item span{font-size:26px;display:block;margin-bottom:8px}
+.adj-item b{display:block;font-size:14.5px;font-weight:800}
+.adj-item small{color:var(--muted);font-size:12px}
+
+/* NOW HIRING / CAREERS */
+.hire-card{max-width:820px;margin:0 auto;text-align:center;border:1px solid var(--line);border-radius:28px;padding:48px 36px;
+  background:linear-gradient(135deg,rgba(255,61,154,.12),rgba(0,230,168,.08));box-shadow:var(--shadow)}
+.hire-badge{display:inline-block;font-weight:900;letter-spacing:.5px;font-size:13px;padding:8px 18px;border-radius:999px;margin-bottom:16px;
+  background:linear-gradient(135deg,var(--miami),var(--miami-2));color:#1a0512}
+.hire-roles{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:560px;margin:26px auto}
+@media(max-width:560px){.hire-roles{grid-template-columns:1fr}}
+.hire-role{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.hire-role span{font-size:30px;display:block;margin-bottom:8px}
+.hire-role b{display:block;font-size:17px;font-weight:800}
+.hire-role small{color:var(--muted);font-size:12.5px}
+.hire-apply{font-size:17px;padding:17px 32px}
+.hire-eoe{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:18px}
+.hire-eoe span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-size:13px;font-weight:800}
+
+/* TELVERGENCE SHOWROOM BADGE */
+.showroom{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;
+  margin-top:8px;padding:14px;border:1px dashed var(--line);border-radius:14px;color:var(--muted);font-size:13px}
+.showroom b{color:var(--cyan)}
+.showroom .url{font-family:ui-monospace,monospace;color:var(--gold);font-weight:700}
+
+/* WIN TV STORM INTELLIGENCE */
+.storm-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start;margin-top:46px}
+@media(max-width:900px){.storm-grid{grid-template-columns:1fr;gap:32px}}
+.storm-phone{background:linear-gradient(180deg,rgba(12,20,40,.8),rgba(7,12,26,.92));border:1px solid var(--line);
+  border-radius:26px;padding:18px;box-shadow:var(--shadow);max-width:400px;margin:0 auto;width:100%}
+.sp-head{display:flex;align-items:center;gap:8px;font-weight:800;font-size:13px;padding:6px 6px 14px;border-bottom:1px solid var(--line);margin-bottom:14px}
+.sp-live{color:var(--miami);animation:pulse 1.6s infinite}
+.sp-chat{min-height:320px;display:flex;flex-direction:column;gap:10px;padding:4px 4px 12px}
+.sp-hint{margin:auto;text-align:center;color:var(--muted);font-size:13px;padding:24px}
+.bub{max-width:82%;padding:11px 14px;border-radius:16px;font-size:13.5px;line-height:1.45;animation:fade .35s ease}
+.bub.in{align-self:flex-start;background:var(--card-2);border:1px solid var(--line);border-bottom-left-radius:5px}
+.bub.out{align-self:flex-end;background:linear-gradient(135deg,var(--cyan-2),var(--cyan));color:#04121a;border-bottom-right-radius:5px;font-weight:600}
+.bub.sys{align-self:center;background:rgba(32,224,112,.14);border:1px solid rgba(32,224,112,.4);color:#8affc0;font-size:12px;font-weight:700;text-align:center}
+.bub.alert{align-self:flex-start;background:linear-gradient(135deg,rgba(255,61,154,.2),rgba(255,143,199,.12));border:1px solid rgba(255,61,154,.5);border-bottom-left-radius:5px}
+.bub .ph{margin-top:8px;height:88px;border-radius:10px;display:grid;place-items:center;font-size:30px;
+  background:linear-gradient(135deg,rgba(255,201,60,.2),rgba(56,225,255,.18));border:1px solid var(--line)}
+.bub .stamp{display:block;margin-top:6px;font-size:10.5px;opacity:.8}
+.sp-sim{width:100%;margin-top:6px}
+.storm-steps{display:flex;flex-direction:column;gap:16px}
+.ss{display:flex;gap:15px;align-items:flex-start}
+.ss-n{flex:0 0 auto;width:50px;height:50px;border-radius:13px;display:grid;place-items:center;font-size:24px;
+  background:linear-gradient(135deg,rgba(255,61,154,.18),rgba(56,225,255,.14));border:1px solid var(--line)}
+.ss h4{font-size:17px;font-weight:800;margin-bottom:4px}
+.ss p{color:var(--muted);font-size:14px}
+.storm-qr{margin-top:8px;border:1px solid rgba(255,201,60,.4);border-radius:16px;padding:20px;
+  background:linear-gradient(135deg,rgba(255,201,60,.1),rgba(255,61,154,.08))}
+.sq-badge{display:inline-block;font-weight:900;font-size:12px;letter-spacing:.5px;padding:6px 13px;border-radius:999px;margin-bottom:10px;
+  background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#0a0f1e}
+.storm-qr p{font-size:14px;color:var(--muted)}
+.storm-qr b{color:var(--ink)}
+.sq-list{list-style:none;display:flex;flex-direction:column;gap:9px;margin:14px 0 12px}
+.sq-list li{display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--ink)}
+.sq-list li span{flex:0 0 auto;width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font-size:15px;background:var(--card-2);border:1px solid var(--line)}
+.sq-foot{font-size:12px;color:var(--muted-2);border-top:1px solid var(--line);padding-top:12px;margin-top:4px}
+
+/* MIAMI NEIGHBORHOODS BAND */
+.miami-band{padding:40px 0;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg,rgba(255,61,154,.08),rgba(56,225,255,.05))}
+.mb-head{font-weight:900;font-size:clamp(16px,2.4vw,24px);letter-spacing:.3px;margin-bottom:18px;
+  background:linear-gradient(120deg,var(--miami),var(--gold) 55%,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.mb-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;max-width:900px;margin:0 auto 16px}
+.mb-chips span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 15px;font-size:13px;font-weight:700;transition:.2s}
+.mb-chips span:hover{border-color:var(--miami);color:var(--miami-2);transform:translateY(-2px)}
+.mb-sub{max-width:680px;margin:0 auto;color:var(--muted);font-size:15px}
+.mb-sub b{color:var(--gold)}
+
+/* GIANT SMART VANITY NUMBER BAND */
+.bignum-wrap{padding:70px 0;position:relative;text-align:center;
+  background:
+   radial-gradient(900px 400px at 50% 0%, rgba(255,201,60,.16), transparent 65%),
+   linear-gradient(180deg, rgba(255,201,60,.05), rgba(56,225,255,.05));
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.bignum{max-width:1000px}
+.bn-top{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.bn-chip{font-weight:900;letter-spacing:2px;font-size:clamp(15px,2.4vw,22px);padding:8px 20px;border-radius:999px;
+  background:var(--card-2);border:1px solid var(--line)}
+.bn-chip.sms{background:linear-gradient(135deg,var(--cyan),var(--cyan-2));color:#04121a;border:none;box-shadow:0 0 26px rgba(56,225,255,.5)}
+.bn-number{display:block;font-weight:900;letter-spacing:-1px;line-height:.95;
+  font-size:clamp(48px,12vw,150px);
+  background:linear-gradient(120deg,var(--gold),var(--gold-2) 55%,var(--cyan));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  text-shadow:0 0 60px rgba(255,201,60,.25);animation:bnGlow 3s ease-in-out infinite}
+@keyframes bnGlow{0%,100%{filter:drop-shadow(0 0 18px rgba(255,201,60,.35))}50%{filter:drop-shadow(0 0 34px rgba(255,201,60,.6))}}
+.bn-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:22px 0 16px}
+.bn-btn{font-size:clamp(16px,2vw,20px);padding:16px 34px}
+.bn-spell{font-size:clamp(13px,1.8vw,18px);font-weight:700;color:var(--muted);letter-spacing:1px}
+.bn-spell b{color:var(--ink)}
+.bn-sub{max-width:680px;margin:18px auto 0;color:var(--muted);font-size:16px}
+.bn-claims{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:24px}
+.bn-claims span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:11px 20px;font-weight:800;font-size:14px}
+.bn-note{margin-top:16px;font-size:13px;color:var(--muted-2);max-width:620px;margin-left:auto;margin-right:auto}
+
+/* FAST AI ECOSYSTEM */
+.eco{margin-top:46px;display:flex;flex-direction:column;align-items:center}
+.eco-core{position:relative;z-index:2;text-align:center;background:linear-gradient(180deg,var(--navy-800),var(--navy-900));
+  border:1px solid rgba(255,201,60,.4);border-radius:22px;padding:22px 30px;box-shadow:0 0 60px -18px var(--gold-glow)}
+.eco-core-orb{width:64px;height:64px;margin:0 auto 8px;border-radius:50%;display:grid;place-items:center;font-size:30px;
+  background:conic-gradient(from 210deg,var(--gold),var(--gold-2),var(--cyan),var(--gold));box-shadow:0 0 26px var(--gold-glow);animation:pulse 2.4s infinite}
+.eco-core b{display:block;font-size:17px;font-weight:900}
+.eco-core span{font-size:12px;color:var(--muted)}
+.eco-connector{width:2px;height:34px;background:linear-gradient(180deg,var(--gold),transparent)}
+.eco-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;width:100%}
+@media(max-width:900px){.eco-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.eco-grid{grid-template-columns:1fr}}
+.eco-node{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;text-align:center;transition:.24s;position:relative;overflow:hidden}
+.eco-node::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(56,225,255,.12),transparent 70%);opacity:0;transition:.24s}
+.eco-node:hover{transform:translateY(-5px);border-color:rgba(255,201,60,.5)}
+.eco-node:hover::before{opacity:1}
+.en-ic{font-size:28px;display:block;margin-bottom:10px}
+.eco-node b{display:block;font-size:14.5px;font-weight:800;margin-bottom:5px}
+.eco-node small{color:var(--muted);font-size:12.5px;line-height:1.5}
+.eco-strip{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:34px}
+.eco-strip span{background:var(--card-2);border:1px solid var(--line);border-radius:999px;padding:11px 20px;font-weight:800;font-size:14px}
+
+/* VALUES STRIP */
+.values{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:24px;
+  font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:13px}
+.values span{background:linear-gradient(120deg,var(--gold),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.values i{color:var(--muted-2);font-style:normal}
+
+/* SKU / QR SCANNER + INVENTORY */
+.scanner{border:1px solid var(--line);border-radius:24px;overflow:hidden;margin-top:44px;
+  background:linear-gradient(180deg,rgba(12,20,40,.75),rgba(7,12,26,.9));box-shadow:var(--shadow)}
+.scan-window{position:relative;height:200px;display:grid;place-items:center;
+  background:radial-gradient(circle at 50% 40%,rgba(56,225,255,.08),transparent 65%);
+  border-bottom:1px solid var(--line);overflow:hidden}
+.scan-reticle{position:relative;width:150px;height:150px}
+.scan-reticle span{position:absolute;width:28px;height:28px;border:3px solid var(--gold)}
+.scan-reticle span:nth-child(1){top:0;left:0;border-right:0;border-bottom:0;border-radius:8px 0 0 0}
+.scan-reticle span:nth-child(2){top:0;right:0;border-left:0;border-bottom:0;border-radius:0 8px 0 0}
+.scan-reticle span:nth-child(3){bottom:0;left:0;border-right:0;border-top:0;border-radius:0 0 0 8px}
+.scan-reticle span:nth-child(4){bottom:0;right:0;border-left:0;border-top:0;border-radius:0 0 8px 0}
+.scan-beam{position:absolute;left:6px;right:6px;top:6px;height:3px;border-radius:3px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);box-shadow:0 0 14px var(--gold);opacity:0}
+.scan-window.scanning .scan-beam{opacity:1;animation:beam 1s ease-in-out infinite}
+@keyframes beam{0%,100%{transform:translateY(0)}50%{transform:translateY(132px)}}
+.scan-window.locked{background:radial-gradient(circle at 50% 40%,rgba(32,224,112,.14),transparent 65%)}
+.scan-window.locked .scan-reticle span{border-color:#20e070}
+.scan-status{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:13px;color:var(--muted);font-weight:700;padding:0 16px}
+.scan-controls{display:flex;gap:12px;padding:18px 20px;flex-wrap:wrap}
+.scan-controls input{flex:1;min-width:200px;background:var(--navy-900);border:1px solid var(--line);border-radius:12px;
+  padding:14px 16px;color:var(--ink);font-size:15px;font-family:inherit}
+.scan-controls input:focus{outline:none;border-color:var(--gold)}
+.scan-result{padding:0 20px 22px}
+.scan-result[hidden]{display:none}
+.sr-top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.sr-badge{background:#20e070;color:#04140a;font-weight:900;font-size:12px;padding:5px 12px;border-radius:999px;letter-spacing:.5px}
+.sr-name{font-size:20px;font-weight:900}
+.sr-row{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--muted)}
+.sr-row b{color:var(--ink)}
+.sr-go{margin-top:16px}
+.inv-head{display:flex;align-items:center;justify-content:space-between;margin:40px 0 16px}
+.inv-head span:first-child{font-weight:800;font-size:15px}
+.inv-count{color:var(--gold);font-weight:700;font-size:13px}
+.inv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:900px){.inv-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.inv-grid{grid-template-columns:1fr}}
+.inv-card{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;transition:.2s}
+.inv-card:hover{border-color:var(--gold);transform:translateY(-2px)}
+.inv-qr{flex:0 0 auto;background:#fff;border-radius:8px;padding:4px;display:grid;place-items:center}
+.qr{fill:#0a0f1e}
+.inv-meta{flex:1;min-width:0}
+.inv-name{font-weight:800;font-size:15px}
+.inv-form{font-size:12px;color:var(--muted)}
+.inv-sku{font-size:11px;color:var(--muted-2);font-family:ui-monospace,monospace;margin-top:2px}
+.inv-lock{flex:0 0 auto;background:var(--card-2);border:1px solid var(--line);color:var(--gold);font-weight:800;
+  font-size:12.5px;padding:9px 13px;border-radius:999px;cursor:pointer;transition:.2s}
+.inv-lock:hover{background:var(--gold);color:#0a0f1e}
+.inv-empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:24px}
+
+/* GOOGLE REVIEWS */
+.rev-score{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:22px}
+.rev-big{font-size:52px;font-weight:900;line-height:1;background:linear-gradient(120deg,var(--gold),var(--gold-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.rev-stars{color:var(--gold);font-size:22px;letter-spacing:2px}
+.rev-sub{color:var(--muted);font-size:13.5px;margin-top:3px}
+.rev-gbtn{padding:11px 18px !important;font-size:14px}
+.rev-wall{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}
+@media(max-width:900px){.rev-wall{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.rev-wall{grid-template-columns:1fr}}
+.rev-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.rev-cstars{color:var(--gold);letter-spacing:2px;margin-bottom:8px}
+.rev-card p{font-size:14px;color:var(--ink)}
+.rev-by{margin-top:12px;font-size:13px;color:var(--muted);font-weight:700}
+.rev-g{color:var(--cyan);font-weight:700}
+.rev-cta{display:grid;grid-template-columns:1fr 1.1fr;gap:34px;align-items:center;margin-top:38px;
+  border:1px solid var(--line);border-radius:24px;padding:34px;background:linear-gradient(135deg,rgba(255,201,60,.1),rgba(56,225,255,.08));box-shadow:var(--shadow)}
+@media(max-width:820px){.rev-cta{grid-template-columns:1fr;gap:22px;padding:24px}}
+.rev-cta h3{font-size:24px;font-weight:900;margin-bottom:8px}
+.rev-cta>div>p{color:var(--muted);font-size:15px}
+.rev-form{background:var(--navy-900);border:1px solid var(--line);border-radius:18px;padding:22px}
+.rev-rate{display:flex;gap:6px;font-size:34px;color:var(--muted-2);cursor:pointer;margin-bottom:14px;justify-content:center}
+.rev-rate span{transition:.12s}
+.rev-rate span.on,.rev-rate span.hov{color:var(--gold);text-shadow:0 0 14px var(--gold-glow)}
+
+/* PROMISE BAND */
+.promise{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
+@media(max-width:760px){.promise{grid-template-columns:1fr 1fr}}
+.promise-item{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);
+  border-radius:16px;padding:16px 18px}
+.promise-item .pi-ic{font-size:26px;flex:0 0 auto}
+.promise-item b{display:block;font-size:15px}
+.promise-item span{font-size:12px;color:var(--muted)}
+
+/* THE FAST STANDARD */
+.std-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+@media(max-width:900px){.std-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.std-grid{grid-template-columns:1fr}}
+.std{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:.28s;position:relative;overflow:hidden}
+.std:hover{transform:translateY(-6px);border-color:rgba(56,225,255,.4);background:var(--card-2)}
+.std-ic{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;font-size:26px;
+  background:linear-gradient(135deg,rgba(56,225,255,.18),rgba(255,201,60,.12));border:1px solid var(--line);margin-bottom:16px}
+.std h3{font-size:18px;font-weight:800;margin-bottom:8px;line-height:1.25}
+.std p{color:var(--muted);font-size:14px}
+.std-banner{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:26px;
+  border:1px solid var(--line);border-radius:var(--radius);padding:26px;
+  background:linear-gradient(135deg,rgba(56,225,255,.1),rgba(255,201,60,.1))}
+@media(max-width:640px){.std-banner{grid-template-columns:1fr 1fr}}
+.sb-item{text-align:center}
+.sb-item b{display:block;font-size:clamp(22px,3.4vw,32px);font-weight:900;
+  background:linear-gradient(120deg,var(--gold),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sb-item span{font-size:12.5px;color:var(--muted);font-weight:600}
+
+/* SIDE NAV RAIL */
+.rail{position:fixed;right:20px;top:50%;transform:translateY(-50%);z-index:38;display:flex;flex-direction:column;gap:14px}
+.rail a{position:relative;width:12px;height:12px;display:grid;place-items:center}
+.rail a i{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.25);border:1px solid rgba(255,255,255,.3);transition:.2s}
+.rail a:hover i,.rail a.active i{background:var(--gold);border-color:var(--gold);box-shadow:0 0 12px var(--gold-glow);transform:scale(1.25)}
+.rail a::after{content:attr(data-t);position:absolute;right:22px;top:50%;transform:translateY(-50%) translateX(6px);
+  white-space:nowrap;background:var(--navy-800);border:1px solid var(--line);color:var(--ink);font-size:11.5px;font-weight:700;
+  padding:5px 10px;border-radius:8px;opacity:0;pointer-events:none;transition:.2s}
+.rail a:hover::after{opacity:1;transform:translateY(-50%)}
+@media(max-width:1100px){.rail{display:none}}
+
+/* MEMBER LOGIN MODAL */
+.modal-overlay{position:fixed;inset:0;z-index:60;background:rgba(2,4,10,.72);backdrop-filter:blur(8px);
+  display:none;align-items:center;justify-content:center;padding:20px}
+.modal-overlay.open{display:flex;animation:fade .25s ease}
+.modal-card{position:relative;width:100%;max-width:430px;background:linear-gradient(180deg,var(--navy-800),var(--navy-900));
+  border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:var(--shadow);animation:pop .3s ease}
+.modal-x{position:absolute;top:16px;right:16px;width:34px;height:34px;border-radius:50%;background:var(--card-2);
+  border:1px solid var(--line);color:var(--ink);cursor:pointer;font-size:14px}
+.modal-brand{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.modal-brand b{font-size:17px}.modal-brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:1px;text-transform:uppercase}
+.modal-tabs{display:flex;gap:8px;background:var(--navy-900);border:1px solid var(--line);border-radius:12px;padding:5px;margin-bottom:20px}
+.mt{flex:1;background:transparent;border:none;color:var(--muted);font-weight:800;font-size:13.5px;padding:11px;border-radius:9px;cursor:pointer;transition:.2s;font-family:inherit}
+.mt.active{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#0a0f1e}
+.modal-form{display:none}.modal-form.active{display:block;animation:fade .3s ease}
+.modal-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px;font-size:12.5px}
+.modal-row .rem{color:var(--muted);display:flex;align-items:center;gap:7px;cursor:pointer}
+.mini-link{color:var(--gold);font-weight:700}
+.modal-note{font-size:12px;color:var(--muted);text-align:center;margin-top:12px}
+.modal-foot{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);text-align:center;font-size:11.5px;color:var(--muted-2)}
+
+/* SITEMAP */
+.sitemap{border-top:1px solid var(--line);padding-top:22px;margin-bottom:24px}
+.sitemap-head{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:14px}
+.sitemap-links{display:flex;flex-wrap:wrap;gap:8px 18px}
+.sitemap-links a{color:var(--muted-2);font-size:12.5px;transition:.2s}
+.sitemap-links a:hover{color:var(--gold)}
+.footLogin{cursor:pointer}
+
+.reveal{opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<canvas id="bg3d"></canvas>
+<div class="veil"></div>
+
+<div class="wrap">
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top">
+      <span class="mark">F</span>
+      <span>FAST Adjusting<small>Service Team Corp</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#storm">🌀 Storm Intel</a>
+      <a href="#ecosystem">AI Ecosystem</a>
+      <a href="#services">Services</a>
+      <a href="#inventory">Insurers</a>
+      <a href="#track">Track Claim</a>
+      <a href="#careers">Careers</a>
+      <a href="#" id="navLogin">🔒 Member Login</a>
+    </nav>
+    <a class="nav-cta" href="#start">Start Secure Claim →</a>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge"><span class="dot"></span> 🌴 Miami-Dade's Premier Public Adjusters · Family Owned &amp; Operated · Est. 2018</div>
+      <h1>Miami's Luxury<br><span class="hl">Claims Authority.</span></h1>
+      <p class="lede">In the city of glamour, high stakes, and multi-million-dollar estates, Miami's most discerning homeowners demand the finest coverage — and an adjuster who fights like it. FAST Adjusting Service Team wins high-value mold, water, fire &amp; smoke claims across Miami-Dade with speed, precision, and white-glove care. <b>Family owned. Same-day response. No recovery, no fee.</b></p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#start">⚡ Start My Secure Claim Review</a>
+        <a class="btn btn-ghost" href="#inventory">🔎 Match My Insurer &amp; Form</a>
+      </div>
+      <div class="values" aria-label="Our values">
+        <span>Speed</span><i>·</i><span>Precision</span><i>·</i><span>Accuracy</span><i>·</i><span>Quality</span><i>·</i><span>Heritage</span><i>·</i><span>Legacy</span>
+      </div>
+      <div class="hero-phone">
+        <span class="hp-lbl">📞 Call or 💬 Text our Smart Number</span>
+        <a href="tel:+18552235878"><b>855-2-ADJUST</b></a>
+        <span class="hp-num">(855-223-5878) · a smart telephone number — hold a two-way text conversation with us until your claim is complete</span>
+      </div>
+      <div class="trust-row">
+        <span>⏱️ <b>Rapid Same-Day</b> Response</span>
+        <span>💵 <b>Maximum</b> Settlements</span>
+        <span>🇪🇸 <b>Se Habla Español</b></span>
+        <span>✅ <b>Free Inspection · No Recovery, No Fee</b></span>
+      </div>
+    </div>
+
+    <!-- AI TALKING CONCIERGE -->
+    <div class="concierge">
+      <button class="mute-btn" id="muteBtn" title="Toggle voice">🔊</button>
+      <canvas id="orbCanvas"></canvas>
+      <div class="concierge-body">
+        <div class="speech" id="speechBox">Hi, I'm Ava — your AI concierge for mold, water, fire &amp; smoke damage. Tap the 🔊 to hear me, or pick a button to begin.</div>
+        <div class="concierge-actions">
+          <div class="mini" data-say="Let's start your secure claim review. It only takes about ninety seconds." onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'})">⚡ File a Claim</div>
+          <div class="mini" data-say="Tell me your insurance company and I'll lock the exact claim form instantly." onclick="document.getElementById('inventory').scrollIntoView({behavior:'smooth'})">🔎 Match My Form</div>
+          <div class="mini" data-say="Here are our direct lines. Pick the one that fits your damage." onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">📞 Call a Specialist</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="stats reveal">
+      <div class="stat"><div class="num" data-count="2018">2018</div><div class="lbl">Serving Florida Since</div></div>
+      <div class="stat"><div class="num">Secure</div><div class="lbl">Encrypted Claim Intake</div></div>
+      <div class="stat"><div class="num" data-count="24">24/7</div><div class="lbl">Emergency Storm Response</div></div>
+      <div class="stat"><div class="num" data-count="0">$0</div><div class="lbl">Upfront Cost To You</div></div>
+    </div>
+
+    <div class="promise reveal">
+      <div class="promise-item"><span class="pi-ic">⏱️</span><div><b>Rapid Response</b><span>Same-day, often within the hour</span></div></div>
+      <div class="promise-item"><span class="pi-ic">🛰️</span><div><b>Always-On Network</b><span>Provider matched electronically</span></div></div>
+      <div class="promise-item"><span class="pi-ic">🇺🇸</span><div><b>American-Made</b><span>Quality US materials when available</span></div></div>
+      <div class="promise-item"><span class="pi-ic">🏷️</span><div><b>OEM-Grade</b><span>Quality components, no shortcuts</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MIAMI NEIGHBORHOODS BAND ===================== -->
+<section class="miami-band">
+  <div class="container">
+    <div class="mb-head">🌴 Serving Miami-Dade's Finest — Where the Elite Protect What They've Built 🌆</div>
+    <div class="mb-chips">
+      <span>Brickell</span><span>Coral Gables</span><span>Coconut Grove</span><span>Key Biscayne</span>
+      <span>Miami Beach</span><span>Sunny Isles</span><span>Bal Harbour</span><span>Aventura</span>
+      <span>Pinecrest</span><span>Palmetto Bay</span><span>Cutler Bay</span><span>Coral Terrace</span>
+      <span>Doral</span><span>South Miami</span><span>Fisher Island</span>
+    </div>
+    <p class="mb-sub">Miami is home to some of the highest incomes, the highest standard of living, and the highest-value insurance policies in the nation. When the stakes are this high, the Magic City's elite trust <b>FAST Adjusting</b> — family owned, Miami-Dade proud.</p>
+  </div>
+</section>
+
+<!-- ===================== GIANT SMART VANITY NUMBER BAND ===================== -->
+<section id="call" class="bignum-wrap">
+  <div class="container bignum">
+    <div class="bn-top">
+      <span class="bn-chip">📞 CALL</span>
+      <span class="bn-chip sms">💬 SMS · TXT</span>
+    </div>
+    <a class="bn-number" href="tel:+18552235878" aria-label="Call or text 8 5 5 2 A D J U S T">855&#8209;2&#8209;ADJUST</a>
+    <div class="bn-actions">
+      <a class="btn btn-primary bn-btn" href="tel:+18552235878">📞 Call Now</a>
+      <a class="btn btn-ghost bn-btn" href="sms:+18552235878">💬 Text Us</a>
+    </div>
+    <div class="bn-spell"><b>8·5·5·2·A·D·J·U·S·T</b> &nbsp;=&nbsp; 855·223·5878 &nbsp;·&nbsp; toll-free, nationwide</div>
+    <p class="bn-sub">Our toll-free <b>Smart Vanity DID</b> onboards every caller from start to finish — <b>100% automated, with no human intervention required</b>. Call or text and hold a two-way conversation with us until your claim is complete.</p>
+    <div class="bn-claims">
+      <span>✅ 100% Customer Satisfaction to Date</span>
+      <span>🛡️ Zero Complaints Since Inception</span>
+      <span>🤖 Fully Automated — No Human Needed</span>
+      <span>🔒 No Risk of Theft or Costly Errors</span>
+    </div>
+    <p class="bn-note">Customers tell us they prefer our automated voice-agent onboarding — it removes the risk of theft and unforced, costly errors.</p>
+  </div>
+</section>
+
+<!-- ===================== FAST AI ECOSYSTEM (overview) ===================== -->
+<section id="ecosystem">
+  <div class="container">
+    <div class="center" style="max-width:760px">
+      <div class="eyebrow">The FAST AI Ecosystem</div>
+      <h2 class="h2">One Fully Automated, AI-Driven, <span class="hl">Communications-Centric</span> System</h2>
+      <p class="sub center">Every touchpoint — call, text, photo, form, and status update — runs through a single intelligent ecosystem. That's how FAST Adjusting responds faster, files cleaner, and keeps you informed better than anyone in the business.</p>
+    </div>
+
+    <div class="eco reveal">
+      <div class="eco-core">
+        <div class="eco-core-orb">🧠</div>
+        <b>Ava AI Core</b>
+        <span>Communications engine</span>
+      </div>
+      <div class="eco-connector"></div>
+      <div class="eco-grid">
+        <a class="eco-node" href="#contact"><span class="en-ic">📞</span><b>Smart DID · 2-Way SMS</b><small>Text with us until your claim completes</small></a>
+        <a class="eco-node" href="#storm"><span class="en-ic">🌀</span><b>WIN TV Storm Intelligence</b><small>Pre-storm text alerts &amp; before/after proof</small></a>
+        <a class="eco-node" href="#profile"><span class="en-ic">📸</span><b>AI Photo Assessment</b><small>Instant preliminary scope from your photos</small></a>
+        <a class="eco-node" href="#track"><span class="en-ic">📡</span><b>Real-Time Claim Tracking</b><small>Watch it advance from filed to paid</small></a>
+        <a class="eco-node" href="#coverage"><span class="en-ic">🛰️</span><b>Nationwide Provider Matching</b><small>Covered crews matched electronically</small></a>
+        <a class="eco-node" href="#inventory"><span class="en-ic">🗂️</span><b>Insurer Form Lock-Match</b><small>SKU / QR to the exact carrier form</small></a>
+        <a class="eco-node" href="#reviews"><span class="en-ic">⭐</span><b>Automated Review Capture</b><small>Log &amp; post to Google in one tap</small></a>
+        <a class="eco-node" href="#refer"><span class="en-ic">💸</span><b>Referral-Royalty Engine</b><small>Attribution tied to your number</small></a>
+      </div>
+    </div>
+
+    <div class="eco-strip">
+      <span>⚡ Fully Automated</span><span>🧠 AI-Driven</span><span>💬 Communications-Centric</span><span>🏆 Best in the Business</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PLATFORM (flagship advantage) ===================== -->
+<section id="platform">
+  <div class="container">
+    <div class="center" style="max-width:740px">
+      <div class="eyebrow">The Underlying Infrastructure</div>
+      <h2 class="h2">FAST Connect™ — Your Number. Your App. Your Royalties.</h2>
+      <p class="sub center">A real-time, unified communications platform with a <b>Smart DID engine</b> that issues and assigns a verified company phone number the instant you join — automatically, in under a second, with zero human interaction. Every call to that number is tracked and attributed, so your <b>royalty account</b> is your number.</p>
+    </div>
+
+    <div class="platform-grid">
+      <!-- PHONE MOCKUP -->
+      <div class="phone-mock reveal">
+        <div class="notch"></div>
+        <div class="pm-screen">
+          <div class="pm-head">
+            <div class="pm-logo">F</div>
+            <div><div class="pm-brand">FAST Connect™</div><div class="pm-sub">Private-Labeled App</div></div>
+            <div class="pm-live">● LIVE</div>
+          </div>
+          <div class="pm-card">
+            <div class="pm-lbl">Your Smart DID · auto-issued</div>
+            <div class="pm-number">(305) 555-0142</div>
+            <div class="pm-verified">✓ Verified caller ID · assigned in 0.8s</div>
+            <div class="pm-lbl">= Your Agent ID &amp; Royalty Account</div>
+          </div>
+          <div class="pm-stats">
+            <div class="pm-stat"><b>12</b><span>Referrals</span></div>
+            <div class="pm-stat"><b>$4,850</b><span>Royalties</span></div>
+            <div class="pm-stat"><b>3</b><span>Pending</span></div>
+          </div>
+          <div class="pm-row"><span class="pm-dot g"></span> Maria R. — mold job restored · <b>+$620</b></div>
+          <div class="pm-row"><span class="pm-dot y"></span> J. Alvarez — inspection booked</div>
+          <div class="pm-row"><span class="pm-dot b"></span> Live thread: Adjuster + Crew + Client</div>
+          <div class="pm-cta">📲 Share My Number</div>
+        </div>
+      </div>
+
+      <!-- FEATURE LIST -->
+      <div class="platform-feats">
+        <div class="pf reveal"><div class="pf-ic">⚙️</div><div><h4>Smart DID — Issued On the Fly, No Human Needed</h4><p>The moment you join, our Smart DID engine programmatically provisions and assigns you a real company phone number in real time — sub-second, fully automated, with STIR/SHAKEN-verified branded caller ID so it never gets flagged as spam.</p></div></div>
+        <div class="pf reveal"><div class="pf-ic">📇</div><div><h4>Your Digital Business Card — Private by Design</h4><p>Your Smart DID lives on a shareable digital business card that FAST provides and pays for. Make and take referral calls and texts from it while your personal cell stays 100% private — with AI answering and routing built in.</p></div></div>
+        <div class="pf reveal"><div class="pf-ic">🆔</div><div><h4>Your Number = Your Royalty Account</h4><p>That same number is your agent ID and royalty account. Every lead, call, or job tied to it is automatically credited to you — no codes to remember, no paperwork.</p></div></div>
+        <div class="pf reveal"><div class="pf-ic">💸</div><div><h4>Refer Damage, Earn Royalties</h4><p>Send us a mold, water, fire, or storm job. When the claim is recovered and the property is restored, you earn a royalty — tracked and paid out through the app, tied to your number.</p></div></div>
+        <div class="pf reveal"><div class="pf-ic">⚡</div><div><h4>Real-Time Unified Collaboration</h4><p>You, the client, the licensed adjuster, and the restoration crew share one live thread — messages, photos, moisture readings, documents, and job status in a single place, updated as it happens.</p></div></div>
+        <div class="pf reveal"><div class="pf-ic">📊</div><div><h4>See Every Dollar</h4><p>A live dashboard shows your referrals, their claim and restoration stage, and exactly what you've earned and what's pending — full transparency, always on.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== REFERRAL PROGRAM ===================== -->
+<section id="refer">
+  <div class="container">
+    <div class="center" style="max-width:700px">
+      <div class="eyebrow">Referral Partners · Your Digital Business Card</div>
+      <h2 class="h2">Your Own Digital Business Card — On Us</h2>
+      <p class="sub center">Refer business and get paid, without ever giving out your personal cell. FAST Adjusting <b>provides and pays for</b> a customized Smart DID on your digital business card, so you make and take company referral calls in total privacy — no license required.</p>
+    </div>
+
+    <div class="steps" style="grid-template-columns:repeat(3,1fr)">
+      <div class="step reveal"><div class="n">1</div><h4>Get Your Digital Business Card</h4><p>We provision and gift you a customized Smart DID on your own digital business card — free. It's your referral line, your agent ID, and your royalty account, all in one.</p></div>
+      <div class="step reveal"><div class="n">2</div><h4>Make &amp; Take Calls Privately</h4><p>Share your card and handle every referral call or text through your Smart DID. Your personal cell number stays completely private — always.</p></div>
+      <div class="step reveal"><div class="n">3</div><h4>Earn Royalties</h4><p>When the claim is recovered and the property restored, your royalty is calculated and paid through the app — tracked in real time, tied to your card.</p></div>
+    </div>
+
+    <!-- LIVE SMART DID DEMO -->
+    <div class="did-demo reveal">
+      <div class="did-demo-head">
+        <div><div class="did-eyebrow">⚙️ Smart DID Engine · Live Demo</div><h3>Watch a number get issued in real time</h3></div>
+        <button class="btn btn-primary" id="did-btn">▶ Provision a Smart DID</button>
+      </div>
+      <div class="did-console" id="did-console">
+        <div class="did-line muted">// Idle — press “Provision a Smart DID” to issue a number automatically, no human interaction.</div>
+      </div>
+    </div>
+
+    <div class="refer-cta reveal">
+      <div>
+        <h3>Ready to claim your number?</h3>
+        <p>Free to join. Free number, provisioned automatically. You earn a royalty on every successful referral tied to it.</p>
+      </div>
+      <div class="refer-form">
+        <div class="two">
+          <div class="field"><label>Full Name</label><input id="rf-name" type="text" placeholder="Your name"></div>
+          <div class="field"><label>Mobile</label><input id="rf-phone" type="tel" placeholder="(305) 555-0100"></div>
+        </div>
+        <div class="field"><label>Email</label><input id="rf-email" type="email" placeholder="you@email.com"></div>
+        <button class="btn btn-primary" style="width:100%" id="rf-submit">💸 Claim My Free Company Number</button>
+        <p class="refer-note" id="rf-note">Your private-labeled app number is reserved the moment you submit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NATIONWIDE COVERAGE / ONBOARDING ===================== -->
+<section id="coverage">
+  <div class="container">
+    <div class="center" style="max-width:740px">
+      <div class="eyebrow">Automated Onboarding · Intake · Assessment</div>
+      <h2 class="h2">Nationwide Provider Network — <span class="hl">Matched Electronically, No Phone Tag</span></h2>
+      <p class="sub center">Our onboarding, intake, and assessment engine matches your claim to a vetted, covered provider in real time — fully electronic, coast to coast, the moment you submit.</p>
+    </div>
+
+    <div class="cov-grid">
+      <!-- RADAR COVERAGE VISUAL -->
+      <div class="radar reveal">
+        <div class="radar-rings"><span></span><span></span><span></span></div>
+        <div class="radar-sweep"></div>
+        <div class="radar-core">USA</div>
+        <i class="pin" style="top:34%;left:28%"></i>
+        <i class="pin" style="top:52%;left:40%"></i>
+        <i class="pin" style="top:44%;left:62%"></i>
+        <i class="pin" style="top:66%;left:56%"></i>
+        <i class="pin" style="top:30%;left:70%"></i>
+        <i class="pin" style="top:60%;left:24%"></i>
+        <div class="radar-cap">All 50 States · Live Provider Network</div>
+      </div>
+
+      <!-- PILLARS -->
+      <div class="cov-feats">
+        <div class="pf reveal"><div class="pf-ic">🤖</div><div><h4>Automated Onboarding</h4><p>New clients and referral partners are onboarded end-to-end by software — identity, policy details, and account setup captured and verified with no back-office delay.</p></div></div>
+        <div class="pf reveal"><div class="pf-ic">📝</div><div><h4>Instant Intake &amp; Assessment</h4><p>The intake engine scopes the loss, classifies the damage, and runs an automated coverage assessment the moment a claim is submitted — no waiting on a callback.</p></div></div>
+        <div class="pf reveal"><div class="pf-ic">🛰️</div><div><h4>Nationwide Provider Coverage</h4><p>Our proprietary matching technology assigns a vetted, covered provider across our nationwide network — quickly and electronically, so your claim gets a crew fast.</p></div></div>
+        <div class="cov-chips">
+          <span>🇺🇸 Nationwide Network</span>
+          <span>⚡ No Phone Tag</span>
+          <span>💻 Fully Electronic</span>
+          <span>🔒 Vetted Providers</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WIN TV STORM INTELLIGENCE NETWORK ===================== -->
+<section id="storm">
+  <div class="container">
+    <div class="center" style="max-width:760px">
+      <div class="eyebrow">📺 WIN TV · Storm Intelligence Network</div>
+      <h2 class="h2">When a Storm Comes In, <span class="hl">We Gotcha Covered.</span></h2>
+      <p class="sub center">Our Storm Intelligence Network watches the weather and texts you <b>before</b> the storm hits. Snap a photo of your belongings minutes before, snap another minutes after — and you're covered. Just like that.</p>
+    </div>
+
+    <div class="storm-grid">
+      <!-- SMS MOCKUP -->
+      <div class="storm-phone">
+        <div class="sp-head"><span class="sp-live">●</span> WIN TV Storm Alerts · 855-2-ADJUST</div>
+        <div class="sp-chat" id="stormChat">
+          <div class="sp-hint" id="stormHint">Tap “Simulate” to see how a storm alert protects you in real time. 🌀</div>
+        </div>
+        <button class="btn btn-primary sp-sim" id="stormSim">▶ Simulate a Storm Alert</button>
+      </div>
+
+      <!-- STEPS + QR TECH -->
+      <div class="storm-steps">
+        <div class="ss reveal"><div class="ss-n">📡</div><div><h4>1 · We Detect the Storm</h4><p>The Storm Intelligence Network tracks incoming weather and texts you an alert minutes before impact — powered by WIN TV.</p></div></div>
+        <div class="ss reveal"><div class="ss-n">📸</div><div><h4>2 · Snap BEFORE the Storm</h4><p>Photograph your belongings in pristine condition and upload in real time — timestamped and geo-tagged the moment before damage.</p></div></div>
+        <div class="ss reveal"><div class="ss-n">📷</div><div><h4>3 · Snap AFTER — You're Covered</h4><p>Minutes after the damage, snap another photo and upload. Before-and-after proof carriers can't dispute. Just like that.</p></div></div>
+        <div class="storm-qr reveal">
+          <div class="sq-badge">🔳 QR Inventory Technology · Patent-Pending</div>
+          <p>Use the camera in our <b>field app</b> to inventory a client's belongings via instant <b>QR-code registration</b> — accepted across our insurance-network providers for <b>real-time, pinpoint-accurate claim authorization and payouts</b>.</p>
+          <ul class="sq-list">
+            <li><span>📷</span> In-app camera QR registration — scan &amp; log every item in seconds</li>
+            <li><span>🏦</span> Carrier-accepted across our insurance-network providers</li>
+            <li><span>🎯</span> Real-time, pinpoint-accurate claim authorization</li>
+            <li><span>💰</span> Faster, verified payouts — fewer disputes</li>
+          </ul>
+          <p class="sq-foot">Proprietary, <b>patent-pending</b> &amp; licensed — currently paying out software royalties &amp; licensing fees to partners.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section id="services">
+  <div class="container">
+    <div class="center" style="max-width:680px">
+      <div class="eyebrow">Claim + Restore — Under One Roof</div>
+      <h2 class="h2">We Win the Claim <span class="hl">And</span> Restore the Damage</h2>
+      <p class="sub center">Most firms stop at the settlement. FAST Connect™ routes your approved claim straight to vetted, IICRC-certified restoration crews — so mold, water, fire, and structure get fixed, not just funded.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal"><div class="ic">🦠</div><h3>Mold Removal &amp; Remediation</h3><p>Certified containment, engineering controls, and complete mold removal — documented for the claim and remediated to IICRC standard.</p></div>
+      <div class="svc reveal"><div class="ic">💧</div><h3>Water &amp; Flood Damage</h3><p>Burst pipes, leaks, and flooding — extracted, dried, and rebuilt, with the moisture source proven so nothing gets denied.</p></div>
+      <div class="svc reveal"><div class="ic">🌀</div><h3>Hurricane &amp; Storm</h3><p>Wind and named-storm damage documented to the last shingle, then tarped, dried, and restored fast.</p></div>
+      <div class="svc reveal"><div class="ic">🔥</div><h3>Fire &amp; Smoke</h3><p>Structural, contents, odor, and smoke remediation — plus additional-living-expense recovery, handled end to end.</p></div>
+      <div class="svc reveal"><div class="ic">🏠</div><h3>Roof &amp; Tarping</h3><p>Emergency roof tarps and shrink-wrap, plus reversal of "wear-and-tear" denials with engineering-grade documentation.</p></div>
+      <div class="svc reveal"><div class="ic">🔨</div><h3>Full Restoration &amp; Rebuild</h3><p>From demo to final finishes — your property put back better than before, coordinated in one live thread.</p></div>
+      <div class="svc reveal"><div class="ic">🏢</div><h3>Commercial &amp; Business</h3><p>Large-loss and business-interruption claims negotiated for full value, with restoration to match.</p></div>
+      <div class="svc reveal"><div class="ic">🔁</div><h3>Denied &amp; Underpaid Claims</h3><p>Already denied or shortchanged? We reopen, re-document, and re-negotiate — then restore.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INSURER CLAIM-FORM INVENTORY + SKU/QR READER ===================== -->
+<section id="inventory">
+  <div class="container">
+    <div class="center" style="max-width:760px">
+      <div class="eyebrow">Claim-Form Inventory · SKU / QR Instant-Lock Match</div>
+      <h2 class="h2">Scan Your Insurer. Lock the Right Form. <span class="hl">Filed in Minutes.</span></h2>
+      <p class="sub center">Every carrier has its own claim forms. Our indexed inventory of 30+ insurers is barcoded by SKU — scan the QR or pick your carrier and our engine performs an instant lock-match to the exact form, for a stress-free filing in minutes and a settlement maximized for your policy, across virtually any industry.</p>
+    </div>
+
+    <!-- SCANNER -->
+    <div class="scanner reveal">
+      <div class="scan-window">
+        <div class="scan-reticle"><span></span><span></span><span></span><span></span><div class="scan-beam"></div></div>
+        <div class="scan-status" id="scanStatus">Select or search your insurance company to lock a match…</div>
+      </div>
+      <div class="scan-controls">
+        <input type="text" id="insurerSearch" placeholder="🔎 Search your insurance company or SKU…" autocomplete="off">
+        <button class="btn btn-primary" id="scanBtn">⚡ Instant Lock-Match</button>
+      </div>
+      <div class="scan-result" id="scanResult" hidden></div>
+    </div>
+
+    <!-- INVENTORY GRID -->
+    <div class="inv-head"><span>📦 Claim-Form Inventory</span><span class="inv-count" id="invCount"></span></div>
+    <div class="inv-grid" id="invGrid"><!-- injected --></div>
+  </div>
+</section>
+
+<!-- ===================== WHY US / DIFFERENTIATORS ===================== -->
+<section id="why">
+  <div class="container">
+    <div class="center" style="max-width:680px">
+      <div class="eyebrow">The FAST Difference</div>
+      <h2 class="h2">Why South Florida Chooses Us as the Authority</h2>
+      <p class="sub center">Anyone can file a claim. We're built to <i>win</i> them.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why reveal"><div class="num">1</div><div><h4>We Work Only For You — Never the Insurer</h4><p>The company adjuster is paid to protect their bottom line. We're licensed public adjusters legally bound to represent <i>your</i> interest, and only yours.</p></div></div>
+      <div class="why reveal"><div class="num">2</div><div><h4>No Recovery, No Fee</h4><p>Our fee comes as a percentage of what we recover — so we don't get paid unless you do. Zero upfront risk.</p></div></div>
+      <div class="why reveal"><div class="num">3</div><div><h4>Local, Fast, Bilingual</h4><p>Based in Cutler Bay and built for South Florida weather. We answer 24/7 and speak your language — literally.</p></div></div>
+      <div class="why reveal"><div class="num">4</div><div><h4>Documentation That Wins</h4><p>Line-item estimates, photo evidence, and moisture/damage reports carriers can't wave away.</p></div></div>
+      <div class="why reveal"><div class="num">5</div><div><h4>End-to-End, Hands Free</h4><p>We handle filing, inspections, negotiation, and follow-up. You focus on your family or business.</p></div></div>
+      <div class="why reveal"><div class="num">6</div><div><h4>Reinstated, Active &amp; Accountable</h4><p>A stable, state-registered Florida corporation (Doc. P18000041519) with a real name and address behind every claim.</p></div></div>
+    </div>
+
+    <!-- COMPARISON -->
+    <div class="compare reveal">
+      <div class="compare-row head"><div>Capability</div><div>Other Adjusters</div><div>FAST + FAST Connect™</div></div>
+      <div class="compare-row"><div>Your own company phone number</div><div class="them"><span class="no">✕</span> None</div><div class="us"><span class="yes">✓</span> Free, in-app, instant</div></div>
+      <div class="compare-row"><div>Earn royalties for referrals</div><div class="them"><span class="no">✕</span> Not offered</div><div class="us"><span class="yes">✓</span> Paid via your number</div></div>
+      <div class="compare-row"><div>Mold, water, fire &amp; smoke restored</div><div class="them"><span class="no">✕</span> Claim only</div><div class="us"><span class="yes">✓</span> Certified crews</div></div>
+      <div class="compare-row"><div>Real-time client + adjuster chat</div><div class="them"><span class="no">✕</span> Phone tag</div><div class="us"><span class="yes">✓</span> One live thread</div></div>
+      <div class="compare-row"><div>Licensed public adjuster on your side</div><div class="them"><span class="no">✕</span> Sometimes</div><div class="us"><span class="yes">✓</span> Always</div></div>
+      <div class="compare-row"><div>Cost if claim isn't recovered</div><div class="them"><span class="no">✕</span> Varies</div><div class="us"><span class="yes">✓</span> $0 — no win, no fee</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THE FAST STANDARD (unique offerings) ===================== -->
+<section id="standard">
+  <div class="container">
+    <div class="center" style="max-width:720px">
+      <div class="eyebrow">Unique Offerings · Why We're Different</div>
+      <h2 class="h2">The FAST Standard — Built to Set Us Apart</h2>
+      <p class="sub center">Others send an estimate and disappear. We respond the same day, match your covered provider electronically, rebuild with quality OEM-grade, American-made materials, and back the work in writing.</p>
+    </div>
+    <div class="std-grid">
+      <div class="std reveal"><div class="std-ic">⏱️</div><h3>Rapid, Same-Day Response</h3><p>Emergency mold, water, fire, and smoke response — often on-site within the hour, because damage doesn't wait, and neither do we.</p></div>
+      <div class="std reveal"><div class="std-ic">🛰️</div><h3>Always-On Network — Providers Matched Electronically</h3><p>Our live network matches your claim to a vetted, covered provider electronically the moment you submit. No hold music, no "we'll call you back."</p></div>
+      <div class="std reveal"><div class="std-ic">🇺🇸</div><h3>Quality, American-Made Materials</h3><p>We prioritize American-made boards, fixtures, and finishes — quality you can see and a supply chain that keeps your job moving.</p></div>
+      <div class="std reveal"><div class="std-ic">🏷️</div><h3>OEM-Grade Components</h3><p>We install quality, OEM-grade components and materials — no knockoffs, no "builder-grade" shortcuts.</p></div>
+      <div class="std reveal"><div class="std-ic">📲</div><h3>One Live Thread, One Company Number</h3><p>You, your adjuster, and your crew collaborate in real time inside FAST Connect™ — with your own number and full claim visibility, start to finish.</p></div>
+      <div class="std reveal"><div class="std-ic">🛡️</div><h3>Written Workmanship Warranty</h3><p>Our restoration work is backed by a written workmanship warranty — accountability most "chuck-in-a-truck" contractors won't put on paper.</p></div>
+    </div>
+
+    <div class="std-banner reveal">
+      <div class="sb-item"><b>Same&nbsp;Day</b><span>Rapid response</span></div>
+      <div class="sb-item"><b>Nationwide</b><span>Always-on network</span></div>
+      <div class="sb-item"><b>OEM-Grade</b><span>Quality materials</span></div>
+      <div class="sb-item"><b>$0</b><span>Until we win</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GOOGLE REVIEWS (auto logger + poster) ===================== -->
+<section id="reviews">
+  <div class="container">
+    <div class="center" style="max-width:700px">
+      <div class="eyebrow">Reviews</div>
+      <h2 class="h2">Trusted by Homeowners &amp; Businesses</h2>
+      <div class="rev-score">
+        <div class="rev-big" id="revAvg">5.0</div>
+        <div>
+          <div class="rev-stars" id="revStars">★★★★★</div>
+          <div class="rev-sub"><span id="revCount">128</span> Google reviews · <b>FAST Adjusting Service Team</b></div>
+        </div>
+        <a class="btn btn-ghost rev-gbtn" id="revGoogleLink" href="#">View on Google →</a>
+      </div>
+    </div>
+
+    <div class="rev-wall" id="revWall"><!-- injected: seed + logged reviews --></div>
+
+    <!-- AUTO REVIEW LOGGER + POSTER -->
+    <div class="rev-cta reveal">
+      <div>
+        <h3>Had a great experience? Post it to Google.</h3>
+        <p>Leave your review below — we log it and open Google so it posts to our profile in one tap.</p>
+      </div>
+      <div class="rev-form">
+        <div class="rev-rate" id="revRate" role="radiogroup" aria-label="Rating">
+          <span data-v="1">★</span><span data-v="2">★</span><span data-v="3">★</span><span data-v="4">★</span><span data-v="5">★</span>
+        </div>
+        <div class="field"><label>Your Name</label><input type="text" id="rvName" placeholder="First name, Last initial"></div>
+        <div class="field"><label>Your Review</label><textarea id="rvText" rows="3" placeholder="Tell others about your experience…"></textarea></div>
+        <button class="btn btn-primary" style="width:100%" id="rvSubmit">⭐ Log &amp; Post to Google</button>
+        <p class="modal-note" id="rvNote">Your review is logged for our records and opens Google to publish.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section id="process">
+  <div class="container">
+    <div class="center" style="max-width:680px">
+      <div class="eyebrow">How It Works</div>
+      <h2 class="h2">From Damage to Dollars in 4 Simple Steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">1</div><h4>Free Inspection</h4><p>We come to you, assess every angle of the damage, and review your policy — at no cost.</p></div>
+      <div class="step reveal"><div class="n">2</div><h4>We Document</h4><p>Detailed line-item estimates, photos, and evidence built to withstand the carrier's scrutiny.</p></div>
+      <div class="step reveal"><div class="n">3</div><h4>We Negotiate</h4><p>We file and fight the claim directly with your insurer for the maximum you're owed.</p></div>
+      <div class="step reveal"><div class="n">4</div><h4>You Get Paid</h4><p>Your check arrives — and our fee only comes out of what we successfully recover.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INTAKE FUNNEL ===================== -->
+<section id="start">
+  <div class="container">
+    <div class="center" style="max-width:680px">
+      <div class="eyebrow">Secure Claim Review</div>
+      <h2 class="h2">Start Your Claim in Under 2 Minutes</h2>
+      <p class="sub center">Answer a few quick questions. Ava will route you to the right specialist and pre-fill your booking.</p>
+    </div>
+
+    <div class="funnel-shell reveal">
+      <div class="funnel-head">
+        <h3>⚡ Instant Claim Intake</h3>
+        <div class="progress">
+          <div class="bar"><i id="pbar"></i></div>
+          <div class="lbl" id="plbl">Step 1 of 5</div>
+        </div>
+      </div>
+      <div class="funnel-body">
+        <form id="funnel" onsubmit="return false;">
+
+          <!-- STEP 1 -->
+          <div class="qstep active" data-step="1">
+            <div class="q">What type of damage are you dealing with?</div>
+            <div class="qs">Select the option that best fits your situation.</div>
+            <div class="opts">
+              <div class="opt" data-field="damage" data-val="Mold"><span class="e">🦠</span> Mold</div>
+              <div class="opt" data-field="damage" data-val="Water / Flood"><span class="e">💧</span> Water / Flood</div>
+              <div class="opt" data-field="damage" data-val="Hurricane / Storm"><span class="e">🌀</span> Hurricane / Storm</div>
+              <div class="opt" data-field="damage" data-val="Fire / Smoke"><span class="e">🔥</span> Fire / Smoke</div>
+              <div class="opt" data-field="damage" data-val="Roof Damage"><span class="e">🏠</span> Roof Damage</div>
+              <div class="opt" data-field="damage" data-val="Denied / Underpaid Claim"><span class="e">🔁</span> Denied / Underpaid Claim</div>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="qstep" data-step="2">
+            <div class="q">Have you already filed with your insurance company?</div>
+            <div class="qs">Either way, we can help — this just tells us where to start.</div>
+            <div class="opts">
+              <div class="opt" data-field="filed" data-val="Not yet"><span class="e">🆕</span> Not yet</div>
+              <div class="opt" data-field="filed" data-val="Yes — pending"><span class="e">⏳</span> Yes, it's pending</div>
+              <div class="opt" data-field="filed" data-val="Yes — underpaid"><span class="e">💸</span> Yes, but underpaid</div>
+              <div class="opt" data-field="filed" data-val="Yes — denied"><span class="e">🚫</span> Yes, and it was denied</div>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="qstep" data-step="3">
+            <div class="q">What kind of property is it?</div>
+            <div class="qs">This helps us assign the right specialist and phone line.</div>
+            <div class="opts">
+              <div class="opt" data-field="property" data-val="Single-Family Home"><span class="e">🏡</span> Single-Family Home</div>
+              <div class="opt" data-field="property" data-val="Condo / Apartment"><span class="e">🏢</span> Condo / Apartment</div>
+              <div class="opt" data-field="property" data-val="Commercial Building"><span class="e">🏬</span> Commercial Building</div>
+              <div class="opt" data-field="property" data-val="Rental / Investment"><span class="e">🔑</span> Rental / Investment</div>
+            </div>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="qstep" data-step="4">
+            <div class="q">Where should we send your claim review?</div>
+            <div class="qs">We'll only use this to prepare your free inspection.</div>
+            <div class="two">
+              <div class="field"><label>Full Name</label><input type="text" name="name" placeholder="Jane Homeowner" required></div>
+              <div class="field"><label>Phone</label><input type="tel" name="phone" placeholder="(305) 555-0100" required></div>
+            </div>
+            <div class="field"><label>Email</label><input type="email" name="email" placeholder="you@email.com" required></div>
+            <div class="field"><label>Property Address / City</label><input type="text" name="address" placeholder="Street, City, FL ZIP"></div>
+          </div>
+
+          <!-- STEP 5 -->
+          <div class="qstep" data-step="5">
+            <div class="q">When's the best time to reach you?</div>
+            <div class="qs">Pick a window — or book an exact slot on our calendar in the next step.</div>
+            <div class="opts">
+              <div class="opt" data-field="time" data-val="ASAP / Emergency"><span class="e">🚨</span> ASAP / Emergency</div>
+              <div class="opt" data-field="time" data-val="Morning"><span class="e">🌅</span> Morning</div>
+              <div class="opt" data-field="time" data-val="Afternoon"><span class="e">☀️</span> Afternoon</div>
+              <div class="opt" data-field="time" data-val="Evening"><span class="e">🌙</span> Evening</div>
+            </div>
+            <div class="field" style="margin-top:18px"><label>Anything else we should know? (optional)</label><textarea name="notes" rows="3" placeholder="Briefly describe the damage..."></textarea></div>
+          </div>
+
+          <!-- SUCCESS -->
+          <div class="qstep" data-step="6">
+            <div class="success">
+              <div class="check">✓</div>
+              <h3>You're all set! 🎉</h3>
+              <p id="successMsg">Your secure claim review is reserved. A FAST specialist will reach out shortly. Lock in an exact inspection time below 👇</p>
+              <a class="btn btn-primary" href="#book" onclick="speak('Great — let\'s pick your inspection time.')">📅 Choose My Inspection Time</a>
+            </div>
+          </div>
+
+          <div class="funnel-foot" id="funnelFoot">
+            <button type="button" class="lnk-back" id="backBtn" style="visibility:hidden">← Back</button>
+            <button type="button" class="btn btn-primary" id="nextBtn">Continue →</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INSTANT CLAIM PROFILE + PHOTO UPLOAD ===================== -->
+<section id="profile">
+  <div class="container">
+    <div class="center" style="max-width:720px">
+      <div class="eyebrow">Instant Claim Profile · Photo Upload</div>
+      <h2 class="h2">Snap It. Upload It. <span class="hl">Get an Instant Assessment.</span></h2>
+      <p class="sub center">Upload photos of the damage and create your claim profile anytime — the app returns an auto-generated preliminary assessment in seconds, then hands you a claim number you can track to payout. Backed by our Satisfaction Commitment.</p>
+    </div>
+
+    <div class="pf-wrap reveal">
+      <div class="pf-left">
+        <div class="uploader" id="dropzone" tabindex="0" role="button" aria-label="Upload damage photos">
+          <input type="file" id="photoInput" accept="image/*" capture="environment" multiple hidden>
+          <div class="up-ic">📸</div>
+          <div class="up-title">Tap to add photos or drag them here</div>
+          <div class="up-sub">Damage photos help us assess instantly · JPG / PNG / HEIC</div>
+        </div>
+        <div class="thumbs" id="thumbs"></div>
+
+        <div class="two">
+          <div class="field"><label>Full Name</label><input id="pf-name" type="text" placeholder="Your name"></div>
+          <div class="field"><label>Phone</label><input id="pf-phone" type="tel" placeholder="(305) 555-0100"></div>
+        </div>
+        <div class="field"><label>Email</label><input id="pf-email" type="email" placeholder="you@email.com"></div>
+        <div class="two">
+          <div class="field"><label>Damage Type</label>
+            <select id="pf-damage">
+              <option>Mold</option><option>Water / Flood</option><option>Fire / Smoke</option>
+              <option>Hurricane / Storm</option><option>Roof</option><option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label>Property ZIP</label><input id="pf-zip" type="text" placeholder="33157"></div>
+        </div>
+        <div class="field"><label>Describe the damage (optional)</label><textarea id="pf-desc" rows="2" placeholder="Briefly, what happened?"></textarea></div>
+        <button class="btn btn-primary" id="pf-generate" style="width:100%">⚡ Generate My Instant Assessment</button>
+      </div>
+
+      <div class="pf-right">
+        <div class="assess-empty" id="assessEmpty">🧠 Your instant assessment appears here.<br>Add a photo or two, fill in your details, and tap <b>Generate</b>.</div>
+        <div class="assess" id="assessCard" hidden></div>
+      </div>
+    </div>
+
+    <div class="sat-badge">🤝 Backed by our <b>100% Satisfaction Commitment</b> — if you're not satisfied with your assessment, we'll make it right.</div>
+  </div>
+</section>
+
+<!-- ===================== REAL-TIME CLAIM TRACKER (the "app") ===================== -->
+<section id="track">
+  <div class="container">
+    <div class="center" style="max-width:720px">
+      <div class="eyebrow">FAST Connect™ App · Real-Time Claim Tracking</div>
+      <h2 class="h2">Track Your Claim Live — <span class="hl">From Filed to Paid</span></h2>
+      <p class="sub center">No more calling for updates. Watch every stage of your claim advance in real time, right up to your payout — and add the app to your phone to get notified at each step.</p>
+    </div>
+
+    <div class="track-app reveal">
+      <div class="track-head">
+        <div class="track-idbar">
+          <input id="claimId" placeholder="Enter claim #  (try FAST-2026-0001)" autocomplete="off">
+          <button class="btn btn-primary" id="trackBtn">Track →</button>
+        </div>
+        <button class="btn btn-ghost" id="installBtn">📲 Install App</button>
+      </div>
+
+      <div class="track-empty" id="trackEmpty">🔒 Enter your claim number to see live status. &nbsp;Demo: <b>FAST-2026-0001</b></div>
+
+      <div class="track-body" id="trackBody" hidden>
+        <div class="track-top">
+          <div><div class="tt-lbl">Claim</div><div class="tt-id" id="ttId">—</div></div>
+          <div class="tt-status" id="ttStatus">—</div>
+        </div>
+        <div class="track-meter"><div class="tm-bar"><i id="tmBar"></i></div><span class="tm-pct" id="tmPct">0%</span></div>
+        <div class="track-steps" id="trackSteps"></div>
+        <div class="track-payout" id="trackPayout" hidden></div>
+        <div class="track-feed-h">🔴 Live activity</div>
+        <div class="track-feed" id="trackFeed"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SCHEDULER ===================== -->
+<section id="book">
+  <div class="container">
+    <div class="center" style="max-width:680px">
+      <div class="eyebrow">Book Online</div>
+      <h2 class="h2">Schedule Your Free Inspection Instantly</h2>
+      <p class="sub center">Pick a time that works — it drops straight onto our Google Calendar and you'll get an instant confirmation.</p>
+    </div>
+
+    <div class="sched-card reveal">
+      <div class="sched-head">
+        <h3>📅 Live Booking Calendar</h3>
+        <p>Real-time availability · Free 30-minute damage inspection</p>
+      </div>
+      <!-- Google Calendar Appointment Scheduling embed goes here.
+           Replace GCAL_BOOKING_URL in the config below with your real
+           Google Calendar "Appointment schedule" link. -->
+      <iframe id="gcal-frame" title="Book an appointment" loading="lazy"></iframe>
+      <div class="sched-fallback" id="gcalFallback" style="display:none">
+        <p>📅 Our live calendar isn't linked yet. In the meantime, call any line below or submit the form above and we'll book you within the hour.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PHONE LINES ===================== -->
+<section id="contact">
+  <div class="container">
+    <div class="center" style="max-width:680px">
+      <div class="eyebrow">Direct Lines</div>
+      <h2 class="h2">Call the Right Specialist — 10 Dedicated Lines</h2>
+      <p class="sub center">Skip the runaround. Tap the line that matches your claim and reach a specialist directly.</p>
+    </div>
+    <div class="phones" id="phoneGrid"><!-- injected by JS from PHONE config --></div>
+    <p class="center" style="margin-top:22px;color:var(--muted);font-size:15px">
+      Prefer email? Reach us at
+      <a href="mailto:contact@fastadjustingservice.com" style="color:var(--gold);font-weight:800">✉️ contact@fastadjustingservice.com</a>
+    </p>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section id="faq">
+  <div class="container">
+    <div class="center" style="max-width:680px">
+      <div class="eyebrow">Good To Know</div>
+      <h2 class="h2">Questions Homeowners Ask Us</h2>
+    </div>
+    <div class="faq">
+      <details class="qa" open><summary>What exactly does a public adjuster do?</summary><p>A public adjuster is a licensed professional who represents <i>you</i> — the policyholder — instead of the insurance company. We document the damage, interpret your policy, file the claim, and negotiate directly with your carrier to get you the maximum settlement you're entitled to.</p></details>
+      <details class="qa"><summary>How do I get a phone number so fast?</summary><p>FAST Connect™ runs a Smart DID engine that provisions numbers programmatically. When you join, it requests a number from the carrier pool, assigns it to a new royalty account under your name, registers a STIR/SHAKEN-verified branded caller ID, and turns on AI answering and call-tracking — all through an API in under a second, with no human interaction. The number is live and routable the moment it appears in your app.</p></details>
+      <details class="qa"><summary>How does the FAST Connect™ number &amp; royalty pay work?</summary><p>When you join, we issue you a unique company phone number inside your private-labeled app. That number is your agent ID and royalty account — anyone who calls, texts, or submits a mold, water, fire, or storm job through it is automatically credited to you. When the claim is recovered and the property is restored, your royalty is calculated and paid out through the app, all tracked in real time. Royalty terms are provided at sign-up.</p></details>
+      <details class="qa"><summary>How much does the claim service cost?</summary><p>Nothing upfront. We work on a contingency basis — our fee is a percentage of the settlement we recover for you. If we don't recover anything, you owe us nothing.</p></details>
+      <details class="qa"><summary>My claim was already denied. Can you still help?</summary><p>Absolutely. Denied and underpaid claims are one of our specialties. We re-inspect, re-document, and re-negotiate — often reversing outcomes the carrier called final.</p></details>
+      <details class="qa"><summary>How fast can you inspect my property?</summary><p>For active storm damage we respond 24/7 and can often inspect the same or next day. Use the calendar above or call our Emergency line to get on the schedule immediately.</p></details>
+      <details class="qa"><summary>Are you licensed in Florida?</summary><p>Yes. FAST Adjusting Service Team Corp is an active, state-registered Florida corporation (Document P18000041519) based in Cutler Bay, serving policyholders across South Florida.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FRANCHISE OPPORTUNITIES ===================== -->
+<section id="franchise">
+  <div class="container">
+    <div class="center" style="max-width:720px">
+      <div class="eyebrow">Own a FAST Adjusting Business</div>
+      <h2 class="h2">Franchise &amp; White-Label Opportunities — <span class="hl">From $25,000</span></h2>
+      <p class="sub center">Launch a turnkey adjusting &amp; restoration business powered by the FAST Connect™ platform — Smart DID numbers, real-time claim tracking, the insurer form inventory, and full onboarding. Run it under your own white-labeled brand, or under our proven franchise license.</p>
+    </div>
+
+    <div class="fr-grid">
+      <div class="fr-card reveal">
+        <div class="fr-tag">Option A</div>
+        <h3>🏷️ White-Label License</h3>
+        <div class="fr-price">$25,000<span>turnkey start-up</span></div>
+        <ul class="fr-list">
+          <li>✓ Your own branded app &amp; website</li>
+          <li>✓ FAST Connect™ Smart DID numbers</li>
+          <li>✓ Real-time claim-tracking portal</li>
+          <li>✓ 30+ insurer form inventory &amp; SKU lock-match</li>
+          <li>✓ Licensing fee + ongoing software royalties</li>
+          <li>✓ Onboarding, training &amp; playbook</li>
+        </ul>
+        <button class="btn btn-ghost fr-btn" data-plan="White-Label ($25k)">Request Info →</button>
+      </div>
+
+      <div class="fr-card featured reveal">
+        <div class="fr-tag gold">Option B · Most Popular</div>
+        <h3>🤝 FAST Franchise License</h3>
+        <div class="fr-price">$25,000<span>+ franchise agreement</span></div>
+        <ul class="fr-list">
+          <li>✓ Everything in White-Label, plus:</li>
+          <li>✓ Operate under the trusted FAST brand</li>
+          <li>✓ Protected territory &amp; lead routing</li>
+          <li>✓ National marketing &amp; co-op support</li>
+          <li>✓ Preferred provider &amp; carrier network access</li>
+          <li>✓ Ongoing software royalties &amp; support</li>
+        </ul>
+        <button class="btn btn-primary fr-btn" data-plan="FAST Franchise ($25k)">Apply Now →</button>
+      </div>
+
+      <div class="fr-card reveal">
+        <div class="fr-tag">What's Included</div>
+        <h3>⚙️ Turnkey, Day One</h3>
+        <ul class="fr-list">
+          <li>✓ Software platform &amp; hosting</li>
+          <li>✓ Automated onboarding &amp; intake</li>
+          <li>✓ Nationwide provider network access</li>
+          <li>✓ Referral-royalty engine built in</li>
+          <li>✓ Compliance &amp; document templates</li>
+          <li>✓ Launch marketing kit</li>
+        </ul>
+        <button class="btn btn-ghost fr-btn" data-plan="General Franchise Inquiry">Talk to Us →</button>
+      </div>
+    </div>
+
+    <!-- FRANCHISE LEAD FORM -->
+    <div class="fr-form-wrap reveal" id="frForm">
+      <h3 id="frFormTitle">Request Franchise Information</h3>
+      <div class="two">
+        <div class="field"><label>Full Name</label><input type="text" id="fr-name" placeholder="Your name"></div>
+        <div class="field"><label>Phone</label><input type="tel" id="fr-phone" placeholder="(305) 555-0100"></div>
+      </div>
+      <div class="two">
+        <div class="field"><label>Email</label><input type="email" id="fr-email" placeholder="you@email.com"></div>
+        <div class="field"><label>City / State of Interest</label><input type="text" id="fr-city" placeholder="Miami, FL"></div>
+      </div>
+      <div class="field"><label>Which opportunity?</label>
+        <select id="fr-plan">
+          <option>FAST Franchise ($25k)</option>
+          <option>White-Label ($25k)</option>
+          <option>General Franchise Inquiry</option>
+        </select>
+      </div>
+      <button class="btn btn-primary" style="width:100%" id="fr-submit">📨 Send My Franchise Request</button>
+      <p class="modal-note" id="fr-note">A franchise development rep will contact you within one business day. This is an information request, not a franchise offer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INDEPENDENT ADJUSTERS · LEAD FULFILLMENT ===================== -->
+<section id="adjusters">
+  <div class="container">
+    <div class="adj-card reveal">
+      <div class="adj-badge">🎯 For Independent Field Adjusters</div>
+      <h2 class="h2">No Brand? No Problem.<br><span class="hl">Fulfill Our Leads. Keep 50%.</span></h2>
+      <p class="sub center" style="margin:0 auto">We market aggressively — Google Listings, Yelp &amp; beyond — and generate a steady stream of qualified Miami-Dade claims. If you're a licensed independent field adjuster without your own branding, get instantly branded under FAST, fulfill our leads with our complete tech stack, and keep <b>50% of every gross sale</b>.</p>
+      <div class="adj-grid">
+        <div class="adj-item"><span>🎯</span><b>Qualified, exclusive leads</b><small>Delivered straight to your app</small></div>
+        <div class="adj-item"><span>🏷️</span><b>Instant FAST branding</b><small>Smart DID + digital business card</small></div>
+        <div class="adj-item"><span>📲</span><b>Full field app</b><small>QR inventory, photo assessment, tracking</small></div>
+        <div class="adj-item"><span>💰</span><b>50 / 50 gross split</b><small>Paid through the platform</small></div>
+      </div>
+      <button class="btn btn-primary hire-apply" id="adjApply">📲 Fulfill Our Leads — Apply in the App →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NOW HIRING / CAREERS ===================== -->
+<section id="careers">
+  <div class="container">
+    <div class="hire-card reveal">
+      <div class="hire-badge">🌴 Now Hiring in Miami-Dade County</div>
+      <h2 class="h2">Join Our Family — We're Growing Across Miami</h2>
+      <p class="sub center" style="margin:0 auto 8px">FAST Adjusting is <b>family owned and operated</b>, and our Miami-Dade family is thriving. We're now hiring the next members of our team — we'd love to add you to our ever-expanding family &amp; friends.</p>
+      <div class="hire-roles">
+        <div class="hire-role"><span>🧭</span><b>Regional Managers</b><small>Lead &amp; grow a Miami-Dade territory</small></div>
+        <div class="hire-role"><span>🚗</span><b>Field Supervisors</b><small>Valid driver's license required</small></div>
+      </div>
+      <button class="btn btn-primary hire-apply" id="hireApply">📲 Apply in the FAST Adjusting App Today →</button>
+      <div class="hire-eoe"><span>🇪🇸 We Speak Spanish · Se Habla Español</span><span>🤝 Equal Opportunity Employer</span></div>
+      <p class="modal-note">Log into the FAST Adjusting app to apply · Family owned &amp; operated · Miami-Dade County 🌴</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section>
+  <div class="container">
+    <div class="final reveal">
+      <h2>Miami's Elite Trust FAST. 🌴</h2>
+      <p>From Brickell high-rises to Coral Gables estates, Miami-Dade's finest count on us for mold, water, fire &amp; smoke — rapid response, the exact carrier form locked in seconds, and the maximum settlement. Family owned. No recovery, no fee.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a class="btn btn-primary" href="#start">⚡ Start My Secure Claim Review</a>
+        <a class="btn btn-ghost" href="#inventory">🔎 Match My Insurer &amp; Form</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer id="footerRoot">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top" style="margin-bottom:16px"><span class="mark">F</span><span>FAST Adjusting<small>Service Team Corp</small></span></a>
+        <p>🌴 Miami's premier <b>family-owned</b> public adjusters. We win the claim and restore the damage for Miami-Dade's finest homes &amp; businesses — with quality, OEM-grade, American-made materials.</p>
+        <p id="footAddr">10387 SW 186 St, Ste 106<br>Cutler Bay, FL 33157</p>
+        <p><a href="tel:+18552235878" style="color:var(--gold);font-weight:900;font-size:18px">📞 Call · 💬 SMS·TXT<br>855-2-ADJUST</a><br>(855-223-5878) · toll-free Smart Vanity DID · onboards you 100% automated</p>
+        <p><a href="mailto:contact@fastadjustingservice.com" style="color:var(--gold);font-weight:800">✉️ contact@fastadjustingservice.com</a></p>
+      </div>
+      <div>
+        <h5>Restoration &amp; Claims</h5>
+        <a href="#services">Mold Removal &amp; Remediation</a>
+        <a href="#services">Water &amp; Flood Damage</a>
+        <a href="#services">Fire &amp; Smoke Damage</a>
+        <a href="#services">Hurricane &amp; Storm</a>
+        <a href="#services">Roof &amp; Tarping</a>
+        <a href="#services">Full Restoration &amp; Rebuild</a>
+        <a href="#services">Denied &amp; Underpaid Claims</a>
+      </div>
+      <div>
+        <h5>Platform</h5>
+        <a href="#platform">FAST Connect™</a>
+        <a href="#platform">Smart DID Numbers</a>
+        <a href="#refer">Refer &amp; Earn Royalties</a>
+        <a href="#coverage">Nationwide Coverage</a>
+        <a href="#standard">The FAST Standard</a>
+        <a href="#" class="footLogin">Member Login</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <a href="#top">Home</a>
+        <a href="#careers">Careers · Now Hiring 🌴</a>
+        <a href="#franchise">Franchise</a>
+        <a href="#start">File a Claim</a>
+        <a href="#contact">Phone Lines</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+
+    <!-- SITEMAP -->
+    <div class="sitemap">
+      <div class="sitemap-head">🗺️ Site Map</div>
+      <div class="sitemap-links">
+        <a href="#top">Home</a><a href="#ecosystem">FAST AI Ecosystem</a><a href="#platform">FAST Connect™ Platform</a><a href="#platform">Smart DID Engine</a>
+        <a href="#refer">Refer &amp; Earn Royalties</a><a href="#coverage">Nationwide Provider Coverage</a><a href="#storm">WIN TV Storm Intelligence</a>
+        <a href="#services">Mold Removal</a><a href="#services">Water Damage</a><a href="#services">Fire &amp; Smoke</a>
+        <a href="#services">Hurricane &amp; Storm</a><a href="#services">Roof &amp; Tarping</a><a href="#services">Restoration &amp; Rebuild</a>
+        <a href="#services">Commercial Claims</a><a href="#services">Denied Claims</a><a href="#inventory">Insurer Form Inventory</a>
+        <a href="#inventory">SKU / QR Lock-Match</a><a href="#standard">Why We're Superior</a><a href="#reviews">Reviews</a>
+        <a href="#process">Our Process</a><a href="#start">File a Claim</a><a href="#profile">Upload Photos &amp; Instant Assessment</a><a href="#track">Track Your Claim</a>
+        <a href="#book">Book an Inspection</a><a href="#franchise">Franchise Opportunities</a><a href="#adjusters">Independent Adjusters · Fulfill Leads</a><a href="#careers">Careers · Now Hiring</a><a href="#contact">Phone Lines</a>
+        <a href="#faq">FAQ</a><a href="#" class="footLogin">Member Login</a>
+      </div>
+    </div>
+    <div class="showroom">
+      🌐 <span class="url">fastadjustingservice.com</span> &nbsp;·&nbsp; also featured in the <b>Telvergence™ Showroom</b> at <span class="url">fastadjustingservice.telvergence.com</span><br>
+      🏷️ This complete turnkey site &amp; patent-pending technology is available for acquisition or license — serious inquiries welcome.
+    </div>
+    <div class="legal">
+      © <span id="yr"></span> FAST Adjusting Service Team Corp · Florida Profit Corporation · Document No. P18000041519 · Active &amp; Licensed.<br>
+      🌴 Family Owned &amp; Operated · Proudly Serving Miami-Dade County · We Speak Spanish / Se Habla Español · Equal Opportunity Employer · Now Hiring Regional Managers &amp; Field Supervisors (valid driver's license required).<br>
+      *Statistics shown are illustrative placeholders for demonstration and should be replaced with your firm's verified figures before publishing. This site does not constitute legal advice. Public adjusting fees are regulated under Florida law.
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== SIDE NAV RAIL (scrollspy) ===================== -->
+<nav class="rail" id="rail" aria-label="Section navigation">
+  <a href="#top" data-t="Home"><i></i></a>
+  <a href="#ecosystem" data-t="AI Ecosystem"><i></i></a>
+  <a href="#platform" data-t="Platform"><i></i></a>
+  <a href="#refer" data-t="Refer & Earn"><i></i></a>
+  <a href="#coverage" data-t="Coverage"><i></i></a>
+  <a href="#storm" data-t="🌀 Storm Intel · WIN TV"><i></i></a>
+  <a href="#services" data-t="Services"><i></i></a>
+  <a href="#inventory" data-t="Insurers &amp; Forms"><i></i></a>
+  <a href="#standard" data-t="Why Superior"><i></i></a>
+  <a href="#reviews" data-t="Reviews"><i></i></a>
+  <a href="#process" data-t="Process"><i></i></a>
+  <a href="#start" data-t="File a Claim"><i></i></a>
+  <a href="#profile" data-t="Upload &amp; Assess"><i></i></a>
+  <a href="#track" data-t="Track Claim"><i></i></a>
+  <a href="#book" data-t="Book"><i></i></a>
+  <a href="#contact" data-t="Phone Lines"><i></i></a>
+  <a href="#franchise" data-t="Franchise"><i></i></a>
+  <a href="#adjusters" data-t="Independent Adjusters"><i></i></a>
+  <a href="#careers" data-t="Now Hiring"><i></i></a>
+  <a href="#faq" data-t="FAQ"><i></i></a>
+</nav>
+
+<!-- ===================== MEMBER LOGIN MODAL ===================== -->
+<div class="modal-overlay" id="loginModal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-label="Member login">
+    <button class="modal-x" id="loginClose" aria-label="Close">✕</button>
+    <div class="modal-brand"><span class="mark">F</span><div><b>FAST Connect™</b><small>Member Portal</small></div></div>
+    <div class="modal-tabs">
+      <button class="mt active" data-tab="signin">Member Sign In</button>
+      <button class="mt" data-tab="join">Create Account</button>
+    </div>
+
+    <form class="modal-form active" id="form-signin" onsubmit="return false;">
+      <div class="field"><label>Email or Company Number</label><input type="text" id="li-user" placeholder="you@email.com or (305) 555-0142" autocomplete="username"></div>
+      <div class="field"><label>Password</label><input type="password" id="li-pass" placeholder="••••••••" autocomplete="current-password"></div>
+      <div class="modal-row"><label class="rem"><input type="checkbox" id="li-remember"> Keep me signed in</label><a href="#" class="mini-link">Forgot password?</a></div>
+      <button class="btn btn-primary" style="width:100%" id="li-submit">🔒 Sign In to My Dashboard</button>
+      <p class="modal-note" id="li-note">Track referrals, royalties, claims &amp; your Smart DID — all in one place.</p>
+    </form>
+
+    <form class="modal-form" id="form-join" onsubmit="return false;">
+      <div class="two">
+        <div class="field"><label>Full Name</label><input type="text" id="jn-name" placeholder="Your name"></div>
+        <div class="field"><label>Mobile</label><input type="tel" id="jn-phone" placeholder="(305) 555-0100"></div>
+      </div>
+      <div class="field"><label>Email</label><input type="email" id="jn-email" placeholder="you@email.com"></div>
+      <div class="field"><label>Create Password</label><input type="password" id="jn-pass" placeholder="Choose a password"></div>
+      <button class="btn btn-primary" style="width:100%" id="jn-submit">💸 Create Account &amp; Get My Smart DID</button>
+      <p class="modal-note" id="jn-note">Joining issues your company number instantly — your agent ID &amp; royalty account.</p>
+    </form>
+
+    <div class="modal-foot">🔐 Bank-level encryption · Your data is never sold.</div>
+  </div>
+</div>
+
+</div><!-- /wrap -->
+
+<!-- STICKY MOBILE CALL BAR -->
+<div class="callbar">
+  <a class="c1" id="callbarPrimary" href="#">📞 Call</a>
+  <a class="c2" id="callbarText" href="#">💬 Text</a>
+  <a class="c2" href="#refer">💸 My Number</a>
+</div>
+
+<script>
+/* ============================================================
+   ⭐ CONFIG — EDIT THIS BLOCK ONLY ⭐
+   1) Paste your 10 real phone numbers below.
+   2) Paste your Google Calendar appointment-scheduling embed URL.
+   3) (Optional) point FORM_ENDPOINT at your CRM / Zapier / email service.
+   ============================================================ */
+const CONFIG = {
+  // ---- 10 PHONE LINES (replace the "number" values) ----
+  // ── SMART DID ROUTING ──────────────────────────────────────────────
+  // The 10 published Smart DIDs (645-231-1770…1779) all route to the
+  // owner's cell below, which is NOT published anywhere on the site.
+  // OWNER_ROUTE is used ONLY by your telephony backend for call/SMS routing.
+  // It is never rendered on the page.
+  OWNER_ROUTE: "645-231-1769",   // ← UNPUBLISHED. Do not display.
+  // Set sms:true on any line that can receive texts — the grid adds a "Text" button.
+  PHONES: [
+    { dept:"Smart Vanity · Call or Text",   number:"855-223-5878", vanity:"855-2-ADJUST", sms:true, desc:"Toll-free Smart Vanity DID — onboards you start to finish, 100% automated. Two-way text until your claim is complete", icon:"⭐" },
+    { dept:"New Claim Intake & Onboarding", number:"645-231-1770", sms:true, desc:"Smart DID — start & onboard a new claim, fully automated",  icon:"🆕" },
+    { dept:"Mold Removal & Remediation",    number:"645-231-1771", sms:true, desc:"Smart DID — mold testing, containment & remediation",       icon:"🦠" },
+    { dept:"Fire & Smoke Damage",           number:"645-231-1772", sms:true, desc:"Smart DID — fire, smoke, soot & odor + contents loss",       icon:"🔥" },
+    { dept:"Water & Flood",                 number:"645-231-1773", sms:true, desc:"Smart DID — pipe bursts, leaks, extraction & drying",         icon:"💧" },
+    { dept:"Hurricane & Wind",              number:"645-231-1774", sms:true, desc:"Smart DID — named-storm, wind & roof-uplift claims",          icon:"🌀" },
+    { dept:"Roof & Tarping",                number:"645-231-1775", sms:true, desc:"Smart DID — emergency tarps + denial disputes",               icon:"🏠" },
+    { dept:"Commercial & Business",         number:"645-231-1776", sms:true, desc:"Smart DID — large-loss & business-interruption claims",       icon:"🏢" },
+    { dept:"Denied / Underpaid",            number:"645-231-1777", sms:true, desc:"Smart DID — reopen a denied or lowballed claim",              icon:"🔁" },
+    { dept:"Se Habla Español",              number:"645-231-1778", sms:true, desc:"Smart DID — atención en español · moho, agua, fuego, humo",   icon:"🗣️" },
+    { dept:"24/7 Emergency",                number:"645-231-1779", sms:true, desc:"Smart DID — mold, water, fire or storm, around the clock",     icon:"🚨" }
+  ],
+
+  // ---- GOOGLE CALENDAR ----
+  // Paste your Google Calendar "Appointment schedule" embed URL here.
+  // (In Google Calendar: create an appointment schedule → "Share" → "Embed" → copy the src URL.)
+  // Leave as "" to show the graceful fallback message instead of a broken frame.
+  GCAL_BOOKING_URL: "",
+
+  // ---- OPTIONAL: where intake submissions POST to (Zapier/Make/CRM webhook). Leave "" to just store locally. ----
+  FORM_ENDPOINT: "",
+
+  // ---- OPTIONAL: real Smart DID provisioning endpoint ----
+  // The live demo & sign-up simulate issuing a number client-side. To issue REAL
+  // numbers, point this at your telephony backend (Telvergence / Twilio / Bandwidth /
+  // Telnyx) endpoint that returns { display, e164 }. Leave "" to keep the demo simulation.
+  DID_PROVISION_ENDPOINT: "",
+
+  // ---- GOOGLE REVIEWS ----
+  // Your Google "write a review" link (from Google Business Profile → Ask for reviews),
+  // and your public profile/reviews link. Leave "" to use placeholders.
+  GOOGLE_REVIEW_URL: "",   // e.g. https://g.page/r/XXXXXXXXXXXX/review
+  GOOGLE_PROFILE_URL: "",  // e.g. https://www.google.com/maps/place/...
+  REVIEW_LOG_ENDPOINT: ""  // optional webhook to log every submitted review
+};
+/* ============================================================
+   END CONFIG — nothing below needs editing
+   ============================================================ */
+
+document.getElementById('yr').textContent = 2026;
+
+/* ---------- PHONE GRID ---------- */
+(function(){
+  const grid = document.getElementById('phoneGrid');
+  const tel = n => 'tel:'+n.replace(/[^\d+]/g,'');
+  const sms = n => 'sms:'+n.replace(/[^\d+]/g,'');
+  CONFIG.PHONES.forEach(p=>{
+    const el = document.createElement('div');
+    el.className='phone';
+    const shown = p.vanity || p.number;
+    const sub = p.vanity ? `<div class="desc"><b>${p.number}</b> · ${p.desc}</div>`
+                         : `<div class="desc">${p.desc}</div>`;
+    el.innerHTML = `<div class="pic">${p.icon}</div>
+      <div class="meta"><div class="dept">${p.dept}${p.sms?' <span class="sms-tag">SMS</span>':''}</div>
+        <div class="num">${shown}</div>${sub}</div>
+      <div class="phone-actions">
+        <a class="call" href="${tel(p.number)}">Call →</a>
+        ${p.sms?`<a class="text" href="${sms(p.number)}">💬 Text</a>`:''}
+      </div>`;
+    grid.appendChild(el);
+  });
+  // sticky mobile bar uses the flagship toll-free (first) line — call + text
+  const flag = CONFIG.PHONES[0];
+  document.getElementById('callbarPrimary').href = tel(flag.number);
+  const ct = document.getElementById('callbarText');
+  if(flag.sms){ ct.href = sms(flag.number); } else { ct.style.display='none'; }
+})();
+
+/* ---------- GOOGLE CALENDAR ---------- */
+(function(){
+  const frame = document.getElementById('gcal-frame');
+  const fb = document.getElementById('gcalFallback');
+  if(CONFIG.GCAL_BOOKING_URL && CONFIG.GCAL_BOOKING_URL.startsWith('http')){
+    frame.src = CONFIG.GCAL_BOOKING_URL;
+  } else {
+    frame.style.display='none';
+    fb.style.display='block';
+  }
+})();
+
+/* ============================================================
+   TALKING AI CONCIERGE — Web Speech API + animated 3D orb
+   ============================================================ */
+/* Voice is OFF by default. Tapping the 🔊 button enables it.
+   The engine speaks ONE short sentence at a time and invalidates any
+   previous line (via speakSeq) so speech can never loop or overlap. */
+let voiceOn = false, speakSeq = 0;
+const speechBox = document.getElementById('speechBox');
+const muteBtn = document.getElementById('muteBtn');
+muteBtn.textContent = '🔇';
+muteBtn.title = 'Tap to let Ava talk';
+
+function stopSpeaking(){
+  speakSeq++;                       // invalidate any in-flight chain
+  orbSpeaking=false;
+  if(window.speechSynthesis) speechSynthesis.cancel();
+}
+muteBtn.addEventListener('click', function(){
+  voiceOn = !voiceOn;
+  this.textContent = voiceOn ? '🔊' : '🔇';
+  if(!voiceOn){ stopSpeaking(); }
+  else { greet(); }
+});
+
+function pickVoice(){
+  if(!window.speechSynthesis) return null;
+  const vs = speechSynthesis.getVoices();
+  return vs.find(v=>/female|samantha|zira|google us english|jenny|aria/i.test(v.name))
+      || vs.find(v=>/en-US/i.test(v.lang)) || vs[0] || null;
+}
+
+// speak(): always updates the caption; only produces audio when voiceOn.
+function speak(text){
+  if(speechBox) typeText(text);
+  if(!voiceOn || !window.speechSynthesis) return;
+  const myId = ++speakSeq;                 // this call owns the queue now
+  speechSynthesis.cancel();
+  const parts = (text.match(/[^.!?]+[.!?]*/g) || [text]).map(s=>s.trim()).filter(Boolean);
+  let i = 0;
+  (function next(){
+    if(myId !== speakSeq) { return; }      // superseded by a newer speak()
+    if(i >= parts.length){ if(myId===speakSeq) orbSpeaking=false; return; }
+    const u = new SpeechSynthesisUtterance(parts[i++]);
+    u.rate=1.02; u.pitch=1.05; const v=pickVoice(); if(v) u.voice=v;
+    u.onstart = ()=>{ if(myId===speakSeq) orbSpeaking=true; };
+    u.onend   = ()=>{ if(myId===speakSeq) next(); else orbSpeaking=false; };
+    u.onerror = ()=>{ if(myId===speakSeq) next(); };
+    speechSynthesis.speak(u);
+  })();
+}
+
+function typeText(text){
+  speechBox.textContent=''; let i=0;
+  clearInterval(speechBox._t);
+  speechBox._t=setInterval(()=>{ speechBox.textContent+=text[i++]||''; if(i>text.length)clearInterval(speechBox._t); },16);
+}
+
+// Concierge buttons speak a SHORT line — only when voice is enabled.
+document.querySelectorAll('[data-say]').forEach(b=>{
+  b.addEventListener('click',()=>speak(b.getAttribute('data-say')));
+});
+
+// Greeting only fires when the user turns voice ON (never auto-plays).
+function greet(){
+  speak("Hi, I'm Ava. Tap a button and I'll help you get your number or start your claim.");
+}
+// Stop any speech if the tab is hidden (prevents background loops).
+document.addEventListener('visibilitychange',()=>{ if(document.hidden) stopSpeaking(); });
+if(window.speechSynthesis){ speechSynthesis.cancel(); speechSynthesis.onvoiceschanged=pickVoice; }
+
+/* ---------- 3D ORB (concierge avatar) ---------- */
+let orbSpeaking=false;
+(function(){
+  if(typeof THREE==='undefined') return;
+  const canvas=document.getElementById('orbCanvas');
+  const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true});
+  const scene=new THREE.Scene();
+  const cam=new THREE.PerspectiveCamera(50,1,.1,100); cam.position.z=4;
+  function size(){ const w=canvas.clientWidth,h=canvas.clientHeight; renderer.setPixelRatio(Math.min(devicePixelRatio,2)); renderer.setSize(w,h,false); cam.aspect=w/h; cam.updateProjectionMatrix(); }
+  const geo=new THREE.IcosahedronGeometry(1.15,4);
+  const mat=new THREE.MeshStandardMaterial({color:0x1b2a4a,emissive:0xffc93c,emissiveIntensity:.35,metalness:.7,roughness:.25,wireframe:false});
+  const orb=new THREE.Mesh(geo,mat); scene.add(orb);
+  const wire=new THREE.Mesh(new THREE.IcosahedronGeometry(1.45,2),new THREE.MeshBasicMaterial({color:0x38e1ff,wireframe:true,transparent:true,opacity:.18}));
+  scene.add(wire);
+  const halo=new THREE.Mesh(new THREE.RingGeometry(1.7,1.78,64),new THREE.MeshBasicMaterial({color:0xffc93c,transparent:true,opacity:.4,side:THREE.DoubleSide}));
+  halo.rotation.x=Math.PI/2.2; scene.add(halo);
+  scene.add(new THREE.PointLight(0xffc93c,1.4,20).translateX(3).translateY(2));
+  scene.add(new THREE.PointLight(0x4f8cff,1.2,20).translateX(-3).translateY(-1));
+  scene.add(new THREE.AmbientLight(0x334466,.6));
+  const base=geo.attributes.position.array.slice();
+  let t=0;
+  function loop(){
+    requestAnimationFrame(loop); t+=.016;
+    orb.rotation.y+=.006; orb.rotation.x=Math.sin(t*.4)*.1;
+    wire.rotation.y-=.004; wire.rotation.x+=.002; halo.rotation.z+=.01;
+    const amp = orbSpeaking ? .16 : .05;
+    const spd = orbSpeaking ? 9 : 2.2;
+    const pos=geo.attributes.position.array;
+    for(let i=0;i<pos.length;i+=3){
+      const x=base[i],y=base[i+1],z=base[i+2];
+      const n=Math.sin(x*3+t*spd)+Math.cos(y*3+t*spd)+Math.sin(z*3+t*spd);
+      const f=1+ n*amp*0.14;
+      pos[i]=x*f; pos[i+1]=y*f; pos[i+2]=z*f;
+    }
+    geo.attributes.position.needsUpdate=true;
+    mat.emissiveIntensity = orbSpeaking ? .55+Math.sin(t*14)*.25 : .35;
+    renderer.render(scene,cam);
+  }
+  size(); loop(); addEventListener('resize',size);
+})();
+
+/* ---------- 3D BACKGROUND (particles + drifting shapes) ---------- */
+(function(){
+  if(typeof THREE==='undefined') return;
+  const canvas=document.getElementById('bg3d');
+  const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true});
+  renderer.setPixelRatio(Math.min(devicePixelRatio,1.6));
+  const scene=new THREE.Scene();
+  const cam=new THREE.PerspectiveCamera(60,innerWidth/innerHeight,.1,1000); cam.position.z=60;
+  function size(){ renderer.setSize(innerWidth,innerHeight); cam.aspect=innerWidth/innerHeight; cam.updateProjectionMatrix(); }
+  size(); addEventListener('resize',size);
+
+  // starfield
+  const N=1400, g=new THREE.BufferGeometry(), pos=new Float32Array(N*3);
+  for(let i=0;i<N*3;i++) pos[i]=(Math.random()-.5)*220;
+  g.setAttribute('position',new THREE.BufferAttribute(pos,3));
+  const stars=new THREE.Points(g,new THREE.PointsMaterial({color:0x8fb4ff,size:.5,transparent:true,opacity:.7}));
+  scene.add(stars);
+
+  // gold dust
+  const N2=500, g2=new THREE.BufferGeometry(), p2=new Float32Array(N2*3);
+  for(let i=0;i<N2*3;i++) p2[i]=(Math.random()-.5)*180;
+  g2.setAttribute('position',new THREE.BufferAttribute(p2,3));
+  const gold=new THREE.Points(g2,new THREE.PointsMaterial({color:0xffc93c,size:.9,transparent:true,opacity:.55}));
+  scene.add(gold);
+
+  // wire torus knots drifting
+  const knots=[];
+  for(let i=0;i<3;i++){
+    const k=new THREE.Mesh(new THREE.TorusKnotGeometry(6,1.4,80,12),
+      new THREE.MeshBasicMaterial({color:i%2?0x38e1ff:0xffc93c,wireframe:true,transparent:true,opacity:.09}));
+    k.position.set((i-1)*40,(i-1)*18,-20-i*15); scene.add(k); knots.push(k);
+  }
+
+  let mx=0,my=0;
+  addEventListener('mousemove',e=>{mx=(e.clientX/innerWidth-.5);my=(e.clientY/innerHeight-.5)});
+  let t=0;
+  (function loop(){
+    requestAnimationFrame(loop); t+=.01;
+    stars.rotation.y+=.0006; gold.rotation.y-=.0009; gold.rotation.x+=.0003;
+    knots.forEach((k,i)=>{k.rotation.x+=.002+ i*.001; k.rotation.y+=.003;});
+    cam.position.x += (mx*22 - cam.position.x)*.03;
+    cam.position.y += (-my*16 - cam.position.y)*.03;
+    cam.lookAt(0,0,0);
+    renderer.render(scene,cam);
+  })();
+})();
+
+/* ============================================================
+   INTAKE FUNNEL LOGIC
+   ============================================================ */
+(function(){
+  const data={}; let step=1; const TOTAL=5;
+  const steps=[...document.querySelectorAll('.qstep')];
+  const bar=document.getElementById('pbar'), plbl=document.getElementById('plbl');
+  const nextBtn=document.getElementById('nextBtn'), backBtn=document.getElementById('backBtn');
+  const foot=document.getElementById('funnelFoot');
+
+  const stepPrompts={
+    1:"First — what kind of damage are we dealing with?",
+    2:"Got it. Have you already filed with your insurer?",
+    3:"Thanks. What type of property is it?",
+    4:"Almost there — where should we send your secure claim review?",
+    5:"Last one — when's the best time to reach you?"
+  };
+
+  function show(n){
+    steps.forEach(s=>s.classList.toggle('active', +s.dataset.step===n));
+    const pct = n>TOTAL?100:(n/TOTAL)*100;
+    bar.style.width=pct+'%';
+    if(n<=TOTAL){ plbl.textContent=`Step ${n} of ${TOTAL}`; foot.style.display='flex'; }
+    else { plbl.textContent='Complete'; foot.style.display='none'; }
+    backBtn.style.visibility = n>1 && n<=TOTAL ? 'visible':'hidden';
+    nextBtn.textContent = n===TOTAL ? 'Submit My Claim ✓' : 'Continue →';
+    // caption only — no auto voice per step (prevents speech looping)
+    if(voiceOn && stepPrompts[n] && speechBox) typeText(stepPrompts[n]);
+  }
+
+  // option selection
+  document.querySelectorAll('.opt').forEach(o=>{
+    o.addEventListener('click',()=>{
+      const f=o.dataset.field;
+      document.querySelectorAll(`.opt[data-field="${f}"]`).forEach(x=>x.classList.remove('sel'));
+      o.classList.add('sel'); data[f]=o.dataset.val;
+      // auto-advance on single-select steps
+      if(['damage','filed','property'].includes(f)){ setTimeout(next,260); }
+    });
+  });
+
+  function collectInputs(){
+    document.querySelectorAll('#funnel input,#funnel textarea').forEach(i=>{ if(i.name) data[i.name]=i.value.trim(); });
+  }
+  function validate(n){
+    if(n===1) return !!data.damage;
+    if(n===2) return !!data.filed;
+    if(n===3) return !!data.property;
+    if(n===4){ collectInputs();
+      if(!data.name||!data.phone||!data.email){ speak("Please add your name, phone, and email so we can reach you."); return false; }
+      return true;
+    }
+    if(n===5) return !!data.time;
+    return true;
+  }
+  function next(){
+    if(!validate(step)){ if(step<4) speak("Please pick an option to continue."); return; }
+    if(step===TOTAL){ submit(); return; }
+    step++; show(step);
+  }
+  function back(){ if(step>1){ step--; show(step);} }
+  nextBtn.addEventListener('click',next);
+  backBtn.addEventListener('click',back);
+
+  function submit(){
+    collectInputs(); data.time = data.time||'ASAP';
+    data.submittedAt = 'client-side'; // (no Date() in some sandboxes; server can stamp)
+    // fire to endpoint if configured
+    if(CONFIG.FORM_ENDPOINT){
+      fetch(CONFIG.FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)}).catch(()=>{});
+    }
+    try{ localStorage.setItem('fast_lead_'+Math.floor(performance.now()), JSON.stringify(data)); }catch(e){}
+    // personalize success
+    const first=(data.name||'').split(' ')[0];
+    document.getElementById('successMsg').textContent =
+      `${first?first+', your':'Your'} secure ${data.damage||''} claim review is reserved. A FAST specialist will call ${data.phone||'you'} shortly. Lock in an exact inspection time below 👇`;
+    step=6; show(6);
+    speak(`${first?first+', you':'You'} are all set. A FAST specialist will reach out shortly. Pick an inspection time on our calendar below.`);
+  }
+
+  show(1);
+})();
+
+/* ---------- SMART DID ENGINE (live provisioning demo) ---------- */
+function genDID(){
+  const areas=['305','786','954','561','239']; // South FL
+  const a=areas[Math.floor(Math.random()*areas.length)];
+  const pre=Math.floor(200+Math.random()*799);
+  const ln=String(Math.floor(1000+Math.random()*8999));
+  return {display:`(${a}) ${pre}-${ln}`, e164:`+1${a}${pre}${ln}`};
+}
+function provisionDID(consoleEl, done){
+  const did=genDID();
+  const ms=(680+Math.floor(Math.random()*260));
+  const t0=performance.now();
+  const steps=[
+    ['<span class="k">POST</span> /v1/did/provision  <span class="muted">{ region:"US-FL", app:"FAST Connect", type:"smart" }</span>',180],
+    ['↳ allocating number from carrier pool…',260],
+    [`↳ assigning <span class="num">${did.display}</span> → new royalty account`,300],
+    ['↳ registering STIR/SHAKEN branded caller ID…',300],
+    ['↳ enabling AI answer + call-tracking attribution…',280],
+    ['ok', 60]
+  ];
+  consoleEl.innerHTML='';
+  let i=0;
+  (function run(){
+    if(i>=steps.length){
+      const took=Math.round(performance.now()-t0);
+      const box=document.createElement('div');
+      box.className='did-line';
+      box.innerHTML=`<span class="ok">✓ 200 OK</span> — Smart DID issued &amp; assigned automatically in <b>${(took/1000).toFixed(2)}s</b>, no human interaction.
+        <div class="did-issued"><span class="big">${did.display}</span>
+        <div><div class="tag">✓ VERIFIED CALLER ID</div><div class="muted">${did.e164} · live &amp; routable</div></div></div>`;
+      consoleEl.appendChild(box);
+      consoleEl.scrollTop=consoleEl.scrollHeight;
+      if(done) done(did);
+      return;
+    }
+    const [html,delay]=steps[i++];
+    if(html==='ok'){ setTimeout(run,delay); return; }
+    const line=document.createElement('div');
+    line.className='did-line';
+    line.innerHTML=html+'<span class="did-cursor"></span>';
+    consoleEl.appendChild(line);
+    consoleEl.scrollTop=consoleEl.scrollHeight;
+    setTimeout(()=>{ line.querySelector('.did-cursor')?.remove(); run(); }, delay);
+  })();
+  return did;
+}
+(function(){
+  const btn=document.getElementById('did-btn'), con=document.getElementById('did-console');
+  if(!btn) return;
+  btn.addEventListener('click',()=>{
+    btn.disabled=true; btn.textContent='⏳ Provisioning…';
+    provisionDID(con,()=>{ btn.disabled=false; btn.textContent='▶ Provision Another'; if(voiceOn) speak('Smart DID issued and assigned automatically. No human needed.'); });
+  });
+})();
+
+/* ---------- REFERRAL SIGN-UP ---------- */
+(function(){
+  const btn=document.getElementById('rf-submit'); if(!btn) return;
+  btn.addEventListener('click',()=>{
+    const name=document.getElementById('rf-name').value.trim();
+    const phone=document.getElementById('rf-phone').value.trim();
+    const email=document.getElementById('rf-email').value.trim();
+    const note=document.getElementById('rf-note');
+    if(!name||!phone||!email){ note.textContent='Please add your name, mobile, and email to reserve your number.'; note.style.color='#ff8a95'; speak("Please add your name, mobile, and email to reserve your company number."); return; }
+    const lead={type:'referral-partner',name,phone,email};
+    if(CONFIG.FORM_ENDPOINT){ fetch(CONFIG.FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(lead)}).catch(()=>{}); }
+    try{ localStorage.setItem('fast_partner_'+Math.floor(performance.now()),JSON.stringify(lead)); }catch(e){}
+    const first=name.split(' ')[0];
+    const did=genDID();
+    lead.smartDID=did.e164;
+    note.style.color='#20e070';
+    note.innerHTML=`🎉 ${first}, your Smart DID was just issued automatically:<br>
+      <span style="font-size:20px;font-weight:900;color:var(--gold)">${did.display}</span><br>
+      That's your royalty account. Setup instructions are on the way to ${phone}.`;
+    btn.textContent='✓ Smart DID Issued';
+    speak(`${first}, your smart D I D number was issued automatically. That's your royalty account. Setup instructions are on the way.`);
+  });
+})();
+
+/* ============================================================
+   INSURER CLAIM-FORM INVENTORY + SKU/QR INSTANT-LOCK MATCH
+   ============================================================ */
+(function(){
+  const grid=document.getElementById('invGrid'); if(!grid) return;
+  const CARRIERS=[
+    "State Farm","Allstate","GEICO","Progressive","USAA","Liberty Mutual","Farmers","Nationwide",
+    "Travelers","American Family","Chubb","Citizens Property Insurance","Universal Property","Tower Hill",
+    "Heritage Insurance","FedNat","People's Trust","Security First","Florida Peninsula","Kin Insurance",
+    "Hippo","Lemonade","The Hartford","Mercury","Auto-Owners","Erie Insurance","Safeco","Foremost",
+    "Assurant","AIG"
+  ];
+  const FORMTYPES=["Property Loss Notice","Sworn Statement in Proof of Loss","Contents Inventory Form",
+    "Dwelling Damage Report","Mitigation / Emergency Services","Commercial Loss Notice"];
+  // deterministic helpers (no Math.random so grid is stable per load)
+  const hash=s=>{let h=0;for(let i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))>>>0;return h;};
+  const skuOf=n=>{const h=hash(n);const ab=n.replace(/[^A-Za-z]/g,'').slice(0,3).toUpperCase();
+    return `${ab}-${String(100+h%900)}-${String.fromCharCode(65+h%26)}${h%10}`;};
+  const formOf=n=>FORMTYPES[hash(n)%FORMTYPES.length];
+  // tiny deterministic "QR" glyph (7x7) from the sku hash
+  function qr(sku){
+    const h=hash(sku); let cells='';
+    for(let y=0;y<7;y++)for(let x=0;x<7;x++){
+      const on=((h>>((y*7+x)%31))&1) || x===0||y===0||x===6||y===6&&((x+y)%2===0);
+      if(on) cells+=`<rect x="${x}" y="${y}" width="1" height="1"/>`;
+    }
+    return `<svg class="qr" viewBox="0 0 7 7" width="42" height="42">${cells}</svg>`;
+  }
+  const INV=CARRIERS.map(n=>({name:n,sku:skuOf(n),form:formOf(n)}));
+  document.getElementById('invCount').textContent=`${INV.length} carriers indexed`;
+
+  function card(c){
+    return `<div class="inv-card" data-sku="${c.sku}" data-name="${c.name.toLowerCase()}">
+      <div class="inv-qr">${qr(c.sku)}</div>
+      <div class="inv-meta"><div class="inv-name">${c.name}</div>
+      <div class="inv-form">📄 ${c.form}</div>
+      <div class="inv-sku">SKU ${c.sku}</div></div>
+      <button class="inv-lock" data-lock="${c.sku}">Lock →</button></div>`;
+  }
+  function render(list){ grid.innerHTML=list.map(card).join('') || '<div class="inv-empty">No carrier found — call 855-2-ADJUST and we\'ll match it manually.</div>'; }
+  render(INV);
+
+  const search=document.getElementById('insurerSearch');
+  const status=document.getElementById('scanStatus');
+  const result=document.getElementById('scanResult');
+  const win=document.querySelector('.scan-window');
+
+  search.addEventListener('input',()=>{
+    const q=search.value.trim().toLowerCase();
+    render(INV.filter(c=>c.name.toLowerCase().includes(q)||c.sku.toLowerCase().includes(q)));
+  });
+
+  function lock(carrier){
+    win.classList.add('scanning');
+    status.textContent='🔎 Scanning SKU / QR…';
+    result.hidden=true;
+    setTimeout(()=>{ status.textContent='🔗 Matching carrier form…'; },420);
+    setTimeout(()=>{
+      win.classList.remove('scanning'); win.classList.add('locked');
+      status.innerHTML='✅ <b>LOCKED MATCH</b>';
+      result.hidden=false;
+      result.innerHTML=`<div class="sr-top"><span class="sr-badge">🔒 LOCKED</span>
+        <span class="sr-name">${carrier.name}</span></div>
+        <div class="sr-row"><span>📄 Claim Form</span><b>${carrier.form}</b></div>
+        <div class="sr-row"><span>🏷️ SKU</span><b>${carrier.sku}</b></div>
+        <div class="sr-row"><span>⏱️ Turnaround</span><b>Expedited — filed in minutes</b></div>
+        <div class="sr-row"><span>💵 Payout Target</span><b>Maximized for your policy</b></div>
+        <a class="btn btn-primary sr-go" href="#start">⚡ File This Claim Now →</a>`;
+      setTimeout(()=>win.classList.remove('locked'),1200);
+      if(voiceOn) speak(`Locked match. ${carrier.name}. ${carrier.form}. Expedited filing, maximized for your policy.`);
+    },900);
+  }
+
+  document.getElementById('scanBtn').addEventListener('click',()=>{
+    const q=search.value.trim().toLowerCase();
+    const hit = INV.find(c=>c.name.toLowerCase()===q||c.sku.toLowerCase()===q)
+            || INV.find(c=>c.name.toLowerCase().includes(q)&&q)
+            || null;
+    if(!hit){ status.textContent='Type your carrier name (e.g. "State Farm") or tap Lock on a card below.'; return; }
+    lock(hit);
+  });
+  grid.addEventListener('click',e=>{
+    const b=e.target.closest('[data-lock]'); if(!b) return;
+    const c=INV.find(x=>x.sku===b.dataset.lock); if(c){ lock(c); document.getElementById('inventory').scrollIntoView({behavior:'smooth'}); }
+  });
+})();
+
+/* ============================================================
+   GOOGLE REVIEWS — auto logger + poster + live wall
+   ============================================================ */
+(function(){
+  const wall=document.getElementById('revWall'); if(!wall) return;
+  const SEED=[
+    {n:"Maria R.",v:5,t:"Mold took over after a pipe burst. FAST arrived within the hour, handled the whole claim, and the payout was higher than I imagined. Precision and speed."},
+    {n:"James A.",v:5,t:"Fire and smoke damage — they matched my carrier's form instantly and had the claim filed the same day. Zero stress."},
+    {n:"Denise K.",v:5,t:"Denied claim reopened and paid. The live app let me see every step. Quality work with OEM, USA-made materials."},
+    {n:"Carlos M.",v:5,t:"Water damage restored better than before. Heritage-level craftsmanship and an accurate, fast estimate."},
+    {n:"The Ortiz Family",v:5,t:"Hurricane claim maximized. They were precise, professional, and kept their word on timing."},
+    {n:"Priya S.",v:5,t:"Commercial roof loss handled end to end. Highest payout and the fastest turnaround we've ever had."}
+  ];
+  const g=(CONFIG.GOOGLE_PROFILE_URL||CONFIG.GOOGLE_REVIEW_URL||"https://www.google.com/search?q=FAST+Adjusting+Service+Team+Corp+reviews");
+  document.getElementById('revGoogleLink').href=g;
+
+  function load(){ try{return JSON.parse(localStorage.getItem('fast_reviews')||'[]');}catch(e){return[];} }
+  function save(a){ try{localStorage.setItem('fast_reviews',JSON.stringify(a));}catch(e){} }
+  function stars(v){ return '★★★★★'.slice(0,v)+'☆☆☆☆☆'.slice(0,5-v); }
+  function tile(r){ return `<div class="rev-card"><div class="rev-cstars">${stars(r.v)}</div>
+    <p>${r.t.replace(/</g,'&lt;')}</p><div class="rev-by">— ${r.n.replace(/</g,'&lt;')} <span class="rev-g">via Google</span></div></div>`; }
+  function renderWall(){ const logged=load(); wall.innerHTML=[...logged.slice().reverse(),...SEED].map(tile).join(''); }
+  renderWall();
+
+  // update headline count with logged
+  const baseCount=128;
+  document.getElementById('revCount').textContent=baseCount+load().length;
+
+  // star picker
+  let picked=5; const rate=document.getElementById('revRate');
+  function paint(){ [...rate.children].forEach(s=>s.classList.toggle('on',+s.dataset.v<=picked)); }
+  rate.addEventListener('click',e=>{ if(e.target.dataset.v){ picked=+e.target.dataset.v; paint(); } });
+  rate.addEventListener('mouseover',e=>{ if(e.target.dataset.v){ [...rate.children].forEach(s=>s.classList.toggle('hov',+s.dataset.v<=+e.target.dataset.v)); } });
+  rate.addEventListener('mouseleave',()=>[...rate.children].forEach(s=>s.classList.remove('hov')));
+  paint();
+
+  document.getElementById('rvSubmit').addEventListener('click',()=>{
+    const n=document.getElementById('rvName').value.trim();
+    const t=document.getElementById('rvText').value.trim();
+    const note=document.getElementById('rvNote');
+    if(!n||!t){ note.style.color='#ff8a95'; note.textContent='Please add your name and a short review.'; return; }
+    const review={n,v:picked,t,at:'client'};
+    const all=load(); all.push(review); save(all);           // AUTO-LOG
+    if(CONFIG.REVIEW_LOG_ENDPOINT){ fetch(CONFIG.REVIEW_LOG_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(review)}).catch(()=>{}); }
+    renderWall();
+    document.getElementById('revCount').textContent=baseCount+all.length;
+    note.style.color='#20e070'; note.textContent='✓ Logged! Opening Google so you can post it…';
+    document.getElementById('rvSubmit').textContent='✓ Logged';
+    // AUTO-POST: open the Google review page (prefill isn't supported by Google, so we copy the text)
+    const post=CONFIG.GOOGLE_REVIEW_URL||g;
+    try{ navigator.clipboard && navigator.clipboard.writeText(t); }catch(e){}
+    setTimeout(()=>window.open(post,'_blank','noopener'),650);
+  });
+})();
+
+/* ---------- MEMBER LOGIN MODAL ---------- */
+(function(){
+  const modal=document.getElementById('loginModal');
+  const open=(tab)=>{ modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; if(tab) switchTab(tab); };
+  const close=()=>{ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); document.body.style.overflow=''; };
+  function switchTab(name){
+    document.querySelectorAll('.mt').forEach(b=>b.classList.toggle('active',b.dataset.tab===name));
+    document.querySelectorAll('.modal-form').forEach(f=>f.classList.toggle('active',f.id==='form-'+name));
+  }
+  document.querySelectorAll('.mt').forEach(b=>b.addEventListener('click',()=>switchTab(b.dataset.tab)));
+  // openers
+  document.getElementById('navLogin')?.addEventListener('click',e=>{e.preventDefault();open('signin');});
+  document.getElementById('hireApply')?.addEventListener('click',e=>{e.preventDefault();open('join');});
+  document.getElementById('adjApply')?.addEventListener('click',e=>{e.preventDefault();open('join');});
+  document.querySelectorAll('.footLogin').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();open('signin');}));
+  // closers
+  document.getElementById('loginClose').addEventListener('click',close);
+  modal.addEventListener('click',e=>{ if(e.target===modal) close(); });
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') close(); });
+
+  // sign in (front-end demo — wire CONFIG.FORM_ENDPOINT/AUTH to a real backend)
+  document.getElementById('li-submit').addEventListener('click',()=>{
+    const u=document.getElementById('li-user').value.trim(), p=document.getElementById('li-pass').value;
+    const note=document.getElementById('li-note');
+    if(!u||!p){ note.textContent='Enter your email/number and password.'; note.style.color='#ff8a95'; return; }
+    note.style.color='var(--muted)'; note.textContent='🔐 Authenticating…';
+    setTimeout(()=>{ note.style.color='#20e070'; note.textContent='✓ Signed in. (Connect CONFIG auth endpoint to load the live dashboard.)'; },700);
+  });
+  // create account -> reuse DID issuance
+  document.getElementById('jn-submit').addEventListener('click',()=>{
+    const name=document.getElementById('jn-name').value.trim();
+    const phone=document.getElementById('jn-phone').value.trim();
+    const email=document.getElementById('jn-email').value.trim();
+    const pass=document.getElementById('jn-pass').value;
+    const note=document.getElementById('jn-note');
+    if(!name||!phone||!email||!pass){ note.textContent='Please complete all fields to create your account.'; note.style.color='#ff8a95'; return; }
+    const did=(typeof genDID==='function')?genDID():{display:'(305) 555-0142'};
+    const lead={type:'member-signup',name,phone,email,smartDID:did.display};
+    if(CONFIG.FORM_ENDPOINT){ fetch(CONFIG.FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(lead)}).catch(()=>{}); }
+    try{ localStorage.setItem('fast_member_'+Math.floor(performance.now()),JSON.stringify(lead)); }catch(e){}
+    note.style.color='#20e070';
+    note.innerHTML=`🎉 Account created! Your Smart DID: <b style="color:var(--gold)">${did.display}</b>`;
+    document.getElementById('jn-submit').textContent='✓ Account Created';
+  });
+})();
+
+/* ---------- SIDE NAV RAIL SCROLLSPY ---------- */
+(function(){
+  const links=[...document.querySelectorAll('.rail a')];
+  const map=links.map(a=>({a,sec:document.querySelector(a.getAttribute('href'))})).filter(x=>x.sec);
+  const spy=new IntersectionObserver((es)=>{
+    es.forEach(e=>{ if(e.isIntersecting){
+      const id='#'+e.target.id;
+      links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')===id));
+    }});
+  },{rootMargin:'-45% 0px -50% 0px'});
+  map.forEach(x=>spy.observe(x.sec));
+})();
+
+/* ============================================================
+   WIN TV STORM INTELLIGENCE — alert simulation
+   ============================================================ */
+(function(){
+  const btn=document.getElementById('stormSim'); if(!btn) return;
+  const chat=document.getElementById('stormChat');
+  const cid='FAST-2026-'+String(1000+Math.floor(Math.random()*8999)).slice(-4);
+  const SEQ=[
+    {c:'alert', h:'⚠️ <b>STORM INTELLIGENCE ALERT</b> — WIN TV<br>Severe weather approaching Miami-Dade in ~18 min. Snap &amp; timestamp your belongings <b>now</b> to protect your claim.'},
+    {c:'out',  h:'📸 Living room — <b>BEFORE</b><ph>🖼️</ph><stamp>Uploaded 6:42 PM · geo-tagged ✓</stamp>'},
+    {c:'sys',  h:'✅ BEFORE condition locked &amp; timestamped'},
+    {c:'in',   h:'🌀 Storm passing your area now. Stay safe — snap the damage the moment it\'s safe to complete your claim.'},
+    {c:'out',  h:'📷 Living room — <b>AFTER</b><ph>🌊</ph><stamp>Uploaded 7:15 PM · geo-tagged ✓</stamp>'},
+    {c:'sys',  h:`✅ AFTER damage captured · Before-and-after proof locked`},
+    {c:'sys',  h:`🎉 You're covered — claim <b>${cid}</b> opened automatically`}
+  ];
+  function bubble(o){
+    const b=document.createElement('div'); b.className='bub '+o.c;
+    b.innerHTML=o.h.replace('<ph>','<div class="ph">').replace('</ph>','</div>')
+                   .replace('<stamp>','<span class="stamp">').replace('</stamp>','</span>');
+    chat.appendChild(b); chat.scrollTop=chat.scrollHeight;
+  }
+  btn.addEventListener('click',()=>{
+    btn.disabled=true; btn.textContent='📡 Storm alert incoming…';
+    chat.innerHTML=''; let i=0;
+    (function run(){
+      if(i>=SEQ.length){ btn.disabled=false; btn.textContent='▶ Replay Storm Alert';
+        if(voiceOn) speak('Before and after proof captured. You are covered.'); return; }
+      bubble(SEQ[i++]); setTimeout(run, 1100);
+    })();
+  });
+})();
+
+/* ============================================================
+   INSTANT CLAIM PROFILE + PHOTO UPLOAD + AUTO ASSESSMENT
+   ============================================================ */
+let LAST_CLAIM_ID = null;
+(function(){
+  const zone=document.getElementById('dropzone'); if(!zone) return;
+  const input=document.getElementById('photoInput');
+  const thumbs=document.getElementById('thumbs');
+  let photos=[];  // {url,name}
+
+  const addFiles=(files)=>{
+    [...files].filter(f=>f.type.startsWith('image/')).forEach(f=>{
+      const url=URL.createObjectURL(f);
+      const i=photos.push({url,name:f.name})-1;
+      const t=document.createElement('div'); t.className='thumb';
+      t.innerHTML=`<img src="${url}" alt=""><button data-i="${i}" aria-label="Remove">✕</button>`;
+      thumbs.appendChild(t);
+    });
+  };
+  zone.addEventListener('click',()=>input.click());
+  zone.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();input.click();} });
+  input.addEventListener('change',()=>addFiles(input.files));
+  ['dragenter','dragover'].forEach(ev=>zone.addEventListener(ev,e=>{e.preventDefault();zone.classList.add('drag');}));
+  ['dragleave','drop'].forEach(ev=>zone.addEventListener(ev,e=>{e.preventDefault();zone.classList.remove('drag');}));
+  zone.addEventListener('drop',e=>{ if(e.dataTransfer?.files) addFiles(e.dataTransfer.files); });
+  thumbs.addEventListener('click',e=>{ const b=e.target.closest('button[data-i]'); if(!b)return;
+    const i=+b.dataset.i; if(photos[i]){URL.revokeObjectURL(photos[i].url);photos[i]=null;} b.parentElement.remove(); });
+
+  const val=id=>document.getElementById(id).value.trim();
+  function newClaimId(){
+    let n=0; try{ n=(+localStorage.getItem('fast_claim_seq')||0)+1; localStorage.setItem('fast_claim_seq',n); }catch(e){ n=Math.floor(performance.now())%9999; }
+    return 'FAST-2026-'+String(1000+n).slice(-4);
+  }
+  const SERVICES={
+    'Mold':['Containment & air scrubbing','Certified mold remediation','Moisture source repair','Clearance testing'],
+    'Water / Flood':['Water extraction','Structural drying','Anti-microbial treatment','Repairs & rebuild'],
+    'Fire / Smoke':['Soot & smoke removal','Odor neutralization','Contents cleaning','Structural restoration'],
+    'Hurricane / Storm':['Emergency tarping','Water intrusion drying','Roof & envelope repair','Full rebuild'],
+    'Roof':['Emergency tarp','Leak tracing','Roof repair/replace','Interior restoration'],
+    'Other':['On-site inspection','Damage documentation','Scope & estimate','Restoration']
+  };
+
+  document.getElementById('pf-generate').addEventListener('click',()=>{
+    const name=val('pf-name'), phone=val('pf-phone'), email=val('pf-email');
+    const damage=document.getElementById('pf-damage').value, zip=val('pf-zip'), desc=val('pf-desc');
+    const empty=document.getElementById('assessEmpty'), card=document.getElementById('assessCard');
+    if(photos.filter(Boolean).length===0){ empty.innerHTML='📸 Please add at least one damage photo so we can assess it.'; return; }
+    if(!name||!phone||!email){ empty.innerHTML='📝 Add your name, phone, and email to generate your assessment.'; return; }
+
+    const id=newClaimId(); LAST_CLAIM_ID=id;
+    const nPhotos=photos.filter(Boolean).length;
+    const conf=Math.min(96, 78+nPhotos*4);
+    const sev=nPhotos>=4?'Moderate–Severe':nPhotos>=2?'Moderate':'Initial';
+    const svc=SERVICES[damage]||SERVICES.Other;
+    const lead={type:'claim-profile',id,name,phone,email,damage,zip,desc,photos:nPhotos};
+    if(CONFIG.FORM_ENDPOINT){ fetch(CONFIG.FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(lead)}).catch(()=>{}); }
+    try{ localStorage.setItem('fast_profile_'+id,JSON.stringify(lead)); }catch(e){}
+
+    empty.hidden=true; card.hidden=false;
+    card.innerHTML=`
+      <div class="assess-head"><span class="assess-badge">✓ PROFILE CREATED</span><span class="assess-id">${id}</span></div>
+      <div class="assess-conf"><span style="font-size:12px;color:var(--muted)">Assessment confidence</span>
+        <div class="conf-bar"><i id="confFill"></i></div><span class="conf-pct">${conf}%</span></div>
+      <div class="assess-row"><span>📸 Photos analyzed</span><b>${nPhotos}</b></div>
+      <div class="assess-row"><span>🏷️ Damage type</span><b>${damage}</b></div>
+      <div class="assess-row"><span>📊 Preliminary severity</span><b>${sev}</b></div>
+      <div class="assess-row"><span>🧰 Recommended scope</span><b>${svc.join(' · ')}</b></div>
+      <div class="assess-row"><span>📄 Suggested forms</span><b>Property Loss Notice + Proof of Loss</b></div>
+      <div class="assess-row"><span>⏱️ Next step</span><b>Free on-site inspection to confirm</b></div>
+      <div class="assess-actions">
+        <button class="btn btn-primary" id="assessTrack">📡 Track This Claim</button>
+        <a class="btn btn-ghost" href="#book">📅 Book Inspection</a>
+      </div>
+      <div class="assess-note">This is an automated <b>preliminary</b> assessment generated from your photos and details — a licensed FAST adjuster confirms the final scope and value on-site. Photos are held on your device in this demo; connect a secure upload endpoint to store them.</div>`;
+    setTimeout(()=>{ const f=document.getElementById('confFill'); if(f) f.style.width=conf+'%'; },60);
+    document.getElementById('assessTrack').addEventListener('click',()=>{
+      const ci=document.getElementById('claimId'); if(ci){ ci.value=id; }
+      document.getElementById('track').scrollIntoView({behavior:'smooth'});
+      setTimeout(()=>document.getElementById('trackBtn')?.click(),500);
+    });
+    if(voiceOn) speak(`Profile created. Your claim number is ready, and your preliminary assessment is on screen.`);
+  });
+})();
+
+/* ============================================================
+   REAL-TIME CLAIM TRACKER (the "app")
+   ============================================================ */
+(function(){
+  const trackBtn=document.getElementById('trackBtn'); if(!trackBtn) return;
+  const STAGES=[
+    {k:'Claim Received'},{k:'Inspection Scheduled'},{k:'Damage Documented'},
+    {k:'Submitted to Carrier'},{k:'In Negotiation'},{k:'Settlement Approved'},{k:'Payout Issued'}
+  ];
+  const FEED=['Adjuster assigned to your claim','Property inspection completed','Moisture readings & photos uploaded',
+    'Line-item estimate generated','Proof of loss submitted to carrier','Carrier acknowledged receipt',
+    'Counter-offer received — negotiating','Supplement filed for additional damage','Settlement terms agreed'];
+  const body=document.getElementById('trackBody'), empty=document.getElementById('trackEmpty');
+  let timer=null, idx=4;
+  const hash=s=>{let h=0;for(let i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))>>>0;return h;};
+  function render(){
+    const steps=document.getElementById('trackSteps'); steps.innerHTML='';
+    STAGES.forEach((s,i)=>{
+      const cls=i<idx?'done':i===idx?'current':'pending';
+      const mark=i<idx?'✓':i===idx?'●':(i+1);
+      const eta=i<idx?'Done':i===idx?'In progress':'Pending';
+      steps.insertAdjacentHTML('beforeend',
+        `<div class="tstep ${cls}"><div class="tdot">${mark}</div><div class="tname">${s.k}</div><div class="teta">${eta}</div></div>`);
+    });
+    const pct=Math.round(idx/(STAGES.length-1)*100);
+    document.getElementById('tmBar').style.width=pct+'%';
+    document.getElementById('tmPct').textContent=pct+'%';
+    document.getElementById('ttStatus').textContent=STAGES[idx].k;
+    const payout=document.getElementById('trackPayout');
+    if(idx>=STAGES.length-1){ payout.hidden=false; payout.innerHTML='💰 Payout Issued<b>Funds Released</b><span style="color:var(--muted);font-size:13px">Your settlement has been paid.</span>'; }
+    else payout.hidden=true;
+  }
+  function addFeed(msg){
+    const feed=document.getElementById('trackFeed'), t=new Date();
+    const hh=String(t.getHours()).padStart(2,'0'), mm=String(t.getMinutes()).padStart(2,'0');
+    feed.insertAdjacentHTML('afterbegin',`<div class="tfeed"><span class="tf-time">${hh}:${mm}</span><span>${msg}</span></div>`);
+  }
+  function start(id){
+    empty.hidden=true; body.hidden=false;
+    document.getElementById('ttId').textContent=id;
+    idx = /0*1$/.test(id) ? 4 : (2 + hash(id)%3);
+    render();
+    document.getElementById('trackFeed').innerHTML='';
+    addFeed('🔴 Live tracking connected');
+    addFeed(FEED[Math.min(idx,FEED.length-1)]);
+    if(timer) clearInterval(timer);
+    timer=setInterval(()=>{
+      addFeed(FEED[Math.floor(Math.random()*FEED.length)]);
+      if(Math.random()<0.5 && idx<STAGES.length-1){
+        idx++; render();
+        if(idx>=STAGES.length-1){ addFeed('🎉 Payout issued — funds released to you'); clearInterval(timer);
+          if(voiceOn) speak('Great news. Your claim has been paid out.'); }
+      }
+    },5000);
+  }
+  trackBtn.addEventListener('click',()=>{
+    const id=(document.getElementById('claimId').value.trim()||'FAST-2026-0001').toUpperCase();
+    start(id);
+  });
+  document.getElementById('claimId').addEventListener('keydown',e=>{ if(e.key==='Enter') trackBtn.click(); });
+})();
+
+/* ---------- PWA INSTALL + SERVICE WORKER ---------- */
+(function(){
+  const btn=document.getElementById('installBtn'); let deferred=null;
+  window.addEventListener('beforeinstallprompt',e=>{ e.preventDefault(); deferred=e; if(btn) btn.textContent='📲 Install App'; });
+  btn && btn.addEventListener('click',async()=>{
+    if(deferred){ deferred.prompt(); await deferred.userChoice; deferred=null; }
+    else { alert('To install: open your browser menu and choose “Add to Home Screen” or “Install app.”'); }
+  });
+  if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('service-worker.js').catch(()=>{})); }
+})();
+
+/* ---------- FRANCHISE ---------- */
+(function(){
+  const sel=document.getElementById('fr-plan'); if(!sel) return;
+  const title=document.getElementById('frFormTitle');
+  document.querySelectorAll('.fr-btn').forEach(b=>b.addEventListener('click',()=>{
+    const plan=b.dataset.plan;
+    if([...sel.options].some(o=>o.value===plan)) sel.value=plan;
+    title.textContent='Request Info — '+plan;
+    document.getElementById('frForm').scrollIntoView({behavior:'smooth'});
+  }));
+  document.getElementById('fr-submit').addEventListener('click',()=>{
+    const g=id=>document.getElementById(id).value.trim();
+    const lead={type:'franchise',name:g('fr-name'),phone:g('fr-phone'),email:g('fr-email'),city:g('fr-city'),plan:sel.value};
+    const note=document.getElementById('fr-note');
+    if(!lead.name||!lead.phone||!lead.email){ note.style.color='#ff8a95'; note.textContent='Please add your name, phone, and email.'; return; }
+    if(CONFIG.FORM_ENDPOINT){ fetch(CONFIG.FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(lead)}).catch(()=>{}); }
+    try{ localStorage.setItem('fast_franchise_'+Math.floor(performance.now()),JSON.stringify(lead)); }catch(e){}
+    note.style.color='#20e070'; note.textContent='✓ Received! A franchise development rep will contact you within one business day.';
+    document.getElementById('fr-submit').textContent='✓ Request Sent';
+  });
+})();
+
+/* ---------- SCROLL REVEAL ---------- */
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

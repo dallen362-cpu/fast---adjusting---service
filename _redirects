@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects
+# Send www to the apex domain (uncomment once the domain is live):
+# https://www.fastadjustingservice.com/*  https://fastadjustingservice.com/:splat  301!
