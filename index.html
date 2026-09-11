@@ -862,8 +862,47 @@ footer{border-top:1px solid var(--line);padding:52px 0 34px;margin-top:80px;back
 .reveal{opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
 </style>
+<style id="cc-opening-css">
+#fastlangbar{position:sticky;top:0;z-index:70;display:flex;gap:6px;align-items:center;overflow-x:auto;padding:8px 14px;background:#0a0e18;border-bottom:1px solid var(--line);-webkit-overflow-scrolling:touch}
+#fastlangbar::-webkit-scrollbar{height:0}
+#fastlangbar .fl-lbl{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);flex:none;margin-right:4px;font-weight:800}
+.fl-btn{flex:none;display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:5px 11px;cursor:pointer;white-space:nowrap;transition:border-color .2s,color .2s;font-weight:700;font-family:inherit}
+.fl-btn .fg{font-size:14px;line-height:1}
+.fl-btn:hover{border-color:var(--cyan);color:var(--ink)}
+.fl-btn.on{background:linear-gradient(120deg,var(--gold),var(--gold-2));color:#0a0f1e;border-color:transparent;font-weight:800}
+.goog-te-banner-frame,.goog-te-balloon-frame,#goog-gt-tt,.goog-tooltip,.goog-tooltip *{display:none!important}
+.goog-te-gadget{height:0;overflow:hidden;font-size:0}
+body{top:0!important}
+font.goog-text-highlight{background:none!important;box-shadow:none!important}
+#google_translate_element{position:absolute;left:-9999px;top:0;height:0;overflow:hidden}
+.mute-btn.pulse{animation:ccpulse 1.6s ease-out infinite}
+@keyframes ccpulse{0%{box-shadow:0 0 0 0 rgba(56,225,255,.55)}70%{box-shadow:0 0 0 15px rgba(56,225,255,0)}100%{box-shadow:0 0 0 0 rgba(56,225,255,0)}}
+@media (prefers-reduced-motion:reduce){.mute-btn.pulse{animation:none;box-shadow:0 0 0 3px rgba(56,225,255,.4)}}
+</style>
 </head>
 <body>
+<div id="google_translate_element"></div>
+<div id="fastlangbar" aria-label="Choose your language — the whole page translates"><span class="fl-lbl">🌐 This site speaks 14 languages</span></div>
+<script>
+window.googleTranslateElementInit=function(){try{new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'en,es,ht,pt,fr,de,zh-CN,ar,hi,ja,it,ru,ko,vi',autoDisplay:false},'google_translate_element');}catch(e){}};
+(function(){
+  var FLAGS=[{c:'en',f:'🇺🇸',n:'English'},{c:'es',f:'🇪🇸',n:'Español'},{c:'ht',f:'🇭🇹',n:'Kreyòl'},{c:'pt',f:'🇧🇷',n:'Português'},
+   {c:'fr',f:'🇫🇷',n:'Français'},{c:'de',f:'🇩🇪',n:'Deutsch'},{c:'zh-CN',f:'🇨🇳',n:'中文'},{c:'ar',f:'🇸🇦',n:'العربية'},
+   {c:'hi',f:'🇮🇳',n:'हिन्दी'},{c:'ja',f:'🇯🇵',n:'日本語'},{c:'it',f:'🇮🇹',n:'Italiano'},{c:'ru',f:'🇷🇺',n:'Русский'},
+   {c:'ko',f:'🇰🇷',n:'한국어'},{c:'vi',f:'🇻🇳',n:'Tiếng Việt'}];
+  var bar=document.getElementById('fastlangbar'); if(!bar)return;
+  function setCookie(v){try{document.cookie='googtrans='+v+';path=/';document.cookie='googtrans='+v+';path=/;domain=.'+location.hostname.replace(/^www\./,'');}catch(e){}}
+  function applyGoogle(code){var combo=document.querySelector('.goog-te-combo');
+    if(combo){combo.value=(code==='en'?'':code);combo.dispatchEvent(new Event('change'));return;}
+    setCookie(code==='en'?'/en/en':'/en/'+code); location.reload();}
+  function pick(L,btn){[].forEach.call(bar.querySelectorAll('.fl-btn'),function(b){b.classList.remove('on')});if(btn)btn.classList.add('on');
+    try{document.documentElement.setAttribute('lang',L.c);}catch(e){}
+    var tries=0;(function go(){var combo=document.querySelector('.goog-te-combo');if(combo||tries++>24){applyGoogle(L.c);return;}setTimeout(go,220);})();}
+  FLAGS.forEach(function(L,i){var b=document.createElement('button');b.className='fl-btn'+(i===0?' on':'');b.type='button';
+    b.innerHTML='<span class="fg">'+L.f+'</span> '+L.n;b.onclick=function(){pick(L,b)};bar.appendChild(b);});
+})();
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 
 <canvas id="bg3d"></canvas>
 <div class="veil"></div>
@@ -1975,12 +2014,31 @@ function stopSpeaking(){
   orbSpeaking=false;
   if(window.speechSynthesis) speechSynthesis.cancel();
 }
+var __ccActed=false;
 muteBtn.addEventListener('click', function(){
   voiceOn = !voiceOn;
   this.textContent = voiceOn ? '🔊' : '🔇';
+  this.classList.remove('pulse'); __ccActed=true;
   if(!voiceOn){ stopSpeaking(); }
   else { greet(); }
 });
+/* Impressive opening: speak the welcome at the FIRST user gesture — the earliest a
+   browser will allow sound (true autoplay is blocked). Fires once; a direct tap on
+   the speaker button owns its own click. */
+try{ muteBtn.classList.add('pulse'); }catch(e){}
+(function(){
+  var evs=['pointerdown','keydown','touchstart','scroll','click'];
+  function kick(e){
+    if(__ccActed) return;
+    if(e&&e.target){ var t=e.target; if(t.id==='muteBtn'||(t.closest&&t.closest('#muteBtn'))) return; }
+    __ccActed=true;
+    try{ muteBtn.classList.remove('pulse'); }catch(_){}
+    if(!voiceOn){ voiceOn=true; muteBtn.textContent='🔊'; }
+    try{ greet(); }catch(_){}
+    evs.forEach(function(ev){ window.removeEventListener(ev,kick,true); });
+  }
+  evs.forEach(function(ev){ try{ window.addEventListener(ev,kick,{capture:true,passive:true}); }catch(e){ window.addEventListener(ev,kick,true); } });
+})();
 
 function pickVoice(){
   if(!window.speechSynthesis) return null;
