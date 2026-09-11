@@ -2014,31 +2014,16 @@ function stopSpeaking(){
   orbSpeaking=false;
   if(window.speechSynthesis) speechSynthesis.cancel();
 }
-var __ccActed=false;
 muteBtn.addEventListener('click', function(){
   voiceOn = !voiceOn;
   this.textContent = voiceOn ? '🔊' : '🔇';
-  this.classList.remove('pulse'); __ccActed=true;
+  this.classList.remove('pulse');
   if(!voiceOn){ stopSpeaking(); }
   else { greet(); }
 });
-/* Impressive opening: speak the welcome at the FIRST user gesture — the earliest a
-   browser will allow sound (true autoplay is blocked). Fires once; a direct tap on
-   the speaker button owns its own click. */
+/* Opening: the voice button pulses to invite a tap; speech starts ONLY on an actual tap
+   of the button — real opt-in, never a first-gesture autoplay hijack. */
 try{ muteBtn.classList.add('pulse'); }catch(e){}
-(function(){
-  var evs=['pointerdown','keydown','touchstart','scroll','click'];
-  function kick(e){
-    if(__ccActed) return;
-    if(e&&e.target){ var t=e.target; if(t.id==='muteBtn'||(t.closest&&t.closest('#muteBtn'))) return; }
-    __ccActed=true;
-    try{ muteBtn.classList.remove('pulse'); }catch(_){}
-    if(!voiceOn){ voiceOn=true; muteBtn.textContent='🔊'; }
-    try{ greet(); }catch(_){}
-    evs.forEach(function(ev){ window.removeEventListener(ev,kick,true); });
-  }
-  evs.forEach(function(ev){ try{ window.addEventListener(ev,kick,{capture:true,passive:true}); }catch(e){ window.addEventListener(ev,kick,true); } });
-})();
 
 function pickVoice(){
   if(!window.speechSynthesis) return null;
