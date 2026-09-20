@@ -1015,14 +1015,14 @@ window.googleTranslateElementInit=function(){try{new google.translate.TranslateE
       <a class="btn btn-ghost bn-btn" href="sms:+18552235878">💬 Text Us</a>
     </div>
     <div class="bn-spell"><b>8·5·5·2·A·D·J·U·S·T</b> &nbsp;=&nbsp; 855·223·5878 &nbsp;·&nbsp; toll-free, nationwide</div>
-    <p class="bn-sub">Our toll-free <b>Smart Vanity DID</b> onboards every caller from start to finish — <b>100% automated, with no human intervention required</b>. Call or text and hold a two-way conversation with us until your claim is complete.</p>
+    <p class="bn-sub">Our toll-free <b>Smart Vanity DID</b> answers every caller 24/7 and logs your claim the moment you call. Call or text and hold a two-way conversation with us — a licensed adjuster handles your claim.</p>
     <div class="bn-claims">
-      <span>✅ 100% Customer Satisfaction to Date</span>
-      <span>🛡️ Zero Complaints Since Inception</span>
-      <span>🤖 Fully Automated — No Human Needed</span>
-      <span>🔒 No Risk of Theft or Costly Errors</span>
+      <span>✅ Licensed &amp; Insured Public Adjusters</span>
+      <span>📞 Answered 24/7 — your claim logged the moment you call</span>
+      <span>🤝 No Recovery, No Fee</span>
+      <span>🔒 Your documents handled securely</span>
     </div>
-    <p class="bn-note">Customers tell us they prefer our automated voice-agent onboarding — it removes the risk of theft and unforced, costly errors.</p>
+    <p class="bn-note">Instant intake means nothing is lost between your call and your claim file.</p>
   </div>
 </section>
 
@@ -1090,6 +1090,7 @@ window.googleTranslateElementInit=function(){try{new google.translate.TranslateE
             <div class="pm-stat"><b>$4,850</b><span>Royalties</span></div>
             <div class="pm-stat"><b>3</b><span>Pending</span></div>
           </div>
+          <div class="pm-row" style="opacity:.75;font-style:italic">Example activity — illustrative, not a customer record</div>
           <div class="pm-row"><span class="pm-dot g"></span> Maria R. — mold job restored · <b>+$620</b></div>
           <div class="pm-row"><span class="pm-dot y"></span> J. Alvarez — inspection booked</div>
           <div class="pm-row"><span class="pm-dot b"></span> Live thread: Adjuster + Crew + Client</div>
@@ -1344,15 +1345,7 @@ window.googleTranslateElementInit=function(){try{new google.translate.TranslateE
   <div class="container">
     <div class="center" style="max-width:700px">
       <div class="eyebrow">Reviews</div>
-      <h2 class="h2">Trusted by Homeowners &amp; Businesses</h2>
-      <div class="rev-score">
-        <div class="rev-big" id="revAvg">5.0</div>
-        <div>
-          <div class="rev-stars" id="revStars">★★★★★</div>
-          <div class="rev-sub"><span id="revCount">128</span> Google reviews · <b>FAST Adjusting Service Team</b></div>
-        </div>
-        <a class="btn btn-ghost rev-gbtn" id="revGoogleLink" href="#">View on Google →</a>
-      </div>
+      <h2 class="h2">Share Your Experience</h2>
     </div>
 
     <div class="rev-wall" id="revWall"><!-- injected: seed + logged reviews --></div>
@@ -2413,16 +2406,9 @@ function provisionDID(consoleEl, done){
    ============================================================ */
 (function(){
   const wall=document.getElementById('revWall'); if(!wall) return;
-  const SEED=[
-    {n:"Maria R.",v:5,t:"Mold took over after a pipe burst. FAST arrived within the hour, handled the whole claim, and the payout was higher than I imagined. Precision and speed."},
-    {n:"James A.",v:5,t:"Fire and smoke damage — they matched my carrier's form instantly and had the claim filed the same day. Zero stress."},
-    {n:"Denise K.",v:5,t:"Denied claim reopened and paid. The live app let me see every step. Quality work with OEM, USA-made materials."},
-    {n:"Carlos M.",v:5,t:"Water damage restored better than before. Heritage-level craftsmanship and an accurate, fast estimate."},
-    {n:"The Ortiz Family",v:5,t:"Hurricane claim maximized. They were precise, professional, and kept their word on timing."},
-    {n:"Priya S.",v:5,t:"Commercial roof loss handled end to end. Highest payout and the fastest turnaround we've ever had."}
-  ];
+  const SEED=[];
   const g=(CONFIG.GOOGLE_PROFILE_URL||CONFIG.GOOGLE_REVIEW_URL||"https://www.google.com/search?q=FAST+Adjusting+Service+Team+Corp+reviews");
-  document.getElementById('revGoogleLink').href=g;
+  const gl=document.getElementById('revGoogleLink'); if(gl) gl.href=g;
 
   function load(){ try{return JSON.parse(localStorage.getItem('fast_reviews')||'[]');}catch(e){return[];} }
   function save(a){ try{localStorage.setItem('fast_reviews',JSON.stringify(a));}catch(e){} }
@@ -2433,8 +2419,8 @@ function provisionDID(consoleEl, done){
   renderWall();
 
   // update headline count with logged
-  const baseCount=128;
-  document.getElementById('revCount').textContent=baseCount+load().length;
+  const rc=document.getElementById('revCount');
+  if(rc) rc.textContent=load().length;
 
   // star picker
   let picked=5; const rate=document.getElementById('revRate');
@@ -2453,7 +2439,7 @@ function provisionDID(consoleEl, done){
     const all=load(); all.push(review); save(all);           // AUTO-LOG
     if(CONFIG.REVIEW_LOG_ENDPOINT){ fetch(CONFIG.REVIEW_LOG_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(review)}).catch(()=>{}); }
     renderWall();
-    document.getElementById('revCount').textContent=baseCount+all.length;
+    const rc2=document.getElementById('revCount'); if(rc2) rc2.textContent=all.length;
     note.style.color='#20e070'; note.textContent='✓ Logged! Opening Google so you can post it…';
     document.getElementById('rvSubmit').textContent='✓ Logged';
     // AUTO-POST: open the Google review page (prefill isn't supported by Google, so we copy the text)
